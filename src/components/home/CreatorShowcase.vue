@@ -100,15 +100,14 @@ const { staggerChildren } = useScrollAnimation()
   }
 
   &__heading {
-    font-size: $text-2xl;
-    font-weight: $weight-bold;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: $weight-normal;
     color: $color-text-primary;
+    line-height: $leading-tight;
     margin-bottom: $space-12;
     text-align: center;
-    letter-spacing: -0.02em;
 
     @include respond-below('md') {
-      font-size: $text-xl;
       margin-bottom: $space-8;
     }
   }
