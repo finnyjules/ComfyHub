@@ -166,6 +166,17 @@ const createdAgo = (() => {
       overflow: hidden;
       z-index: 0;
       pointer-events: none;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60%;
+        background: linear-gradient(to bottom, transparent, $color-bg-primary);
+        z-index: 1;
+      }
     }
 
     &__banner-img {
@@ -175,7 +186,6 @@ const createdAgo = (() => {
       filter: blur(32px);
       opacity: 0.6;
       transform: scale(1.1); // prevent blur edge artifacts
-      border-radius: $radius-2xl;
     }
 
     // Container
