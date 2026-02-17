@@ -254,7 +254,7 @@ function transformTemplates() {
       id: 'cr_comfyui',
       handle: '@comfyui',
       displayName: 'ComfyUI',
-      avatarUrl: 'https://i.pravatar.cc/150?u=cr_001',
+      avatarUrl: 'https://preview.redd.it/new-comfyui-logo-icon-v0-c05cowjywfze1.png?width=640&crop=smart&auto=webp&s=d381ee8ada0a2b993684c9ef26daf744c43350e2',
     }
 
     workflows.push({

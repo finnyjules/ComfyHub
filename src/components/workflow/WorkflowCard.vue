@@ -39,7 +39,10 @@ function handleFavorite(e) {
           loading="lazy"
         />
         <div v-if="variant !== 'gallery'" class="workflow-card__overlay" :class="{ 'workflow-card__overlay--visible': isHovered }">
-          <span class="workflow-card__run-btn">Run</span>
+          <span class="workflow-card__run-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Run
+          </span>
         </div>
         <BaseBadge
           v-if="workflow.isNew && variant !== 'gallery'"
@@ -80,9 +83,11 @@ function handleFavorite(e) {
           <span class="workflow-card__creator-name">{{ workflow.creator.displayName }}</span>
         </div>
 
-        <!-- Gallery tagline -->
-        <div v-if="variant === 'gallery' && workflow.tags?.length" class="workflow-card__tagline">
-          { {{ workflow.tags.slice(0, 3).join(', ') }} }
+        <!-- Gallery tags as pills -->
+        <div v-if="variant === 'gallery' && workflow.tags?.length" class="workflow-card__tag-pills">
+          <span v-for="tag in workflow.tags.slice(0, 3)" :key="tag" class="workflow-card__pill">
+            {{ tag }}
+          </span>
         </div>
 
         <!-- Stats -->
@@ -169,9 +174,12 @@ function handleFavorite(e) {
   }
 
   &__run-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: $space-1;
     padding: $space-2 $space-6;
     background: $color-primary;
-    color: white;
+    color: $color-text-inverse;
     font-weight: $weight-semibold;
     font-size: $text-sm;
     border-radius: $radius-md;
@@ -205,11 +213,15 @@ function handleFavorite(e) {
   }
 
   &__category {
-    font-size: $text-xs;
+    display: inline-flex;
+    padding: 2px $space-2;
+    font-size: 10px;
     font-weight: $weight-medium;
-    color: $color-primary-light;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: $color-text-secondary;
+    background: $color-bg-tertiary;
+    border-radius: $radius-full;
+    text-transform: none;
+    letter-spacing: normal;
   }
 
   &__difficulty {
@@ -354,9 +366,18 @@ function handleFavorite(e) {
     }
   }
 
-  &__tagline {
-    font-size: $text-xs;
-    color: $color-text-tertiary;
+  &__tag-pills {
+    display: flex;
+    gap: $space-1;
+    flex-wrap: wrap;
+  }
+
+  &__pill {
+    font-size: 10px;
+    padding: 2px $space-2;
+    background: $color-bg-tertiary;
+    color: $color-text-secondary;
+    border-radius: $radius-full;
   }
 
   // Featured (hero card)

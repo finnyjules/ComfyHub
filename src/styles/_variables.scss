@@ -1,9 +1,9 @@
 // ===== COLOR SYSTEM (matches docs.comfy.org) =====
-$color-primary: #3b82f6;
-$color-primary-light: #60a5fa;
-$color-primary-dark: #2563eb;
-$color-secondary: #60a5fa;
-$color-secondary-light: #93c5fd;
+$color-primary: #F0FF41;
+$color-primary-light: #F0FF41;
+$color-primary-dark: #d4e030;
+$color-secondary: #F0FF41;
+$color-secondary-light: #f5ff7a;
 $color-accent: #f59e0b;
 $color-accent-light: #fbbf24;
 $color-brand-yellow: #F0FF41;
@@ -26,7 +26,7 @@ $color-border-hover: rgba(255, 255, 255, 0.2);
 $color-success: #22c55e;
 $color-warning: #f59e0b;
 $color-error: #ef4444;
-$color-info: #3b82f6;
+$color-info: #F0FF41;
 
 // ===== SPACING =====
 $space-1: 0.25rem;
@@ -80,8 +80,8 @@ $shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
 $shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
 $shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.6);
 $shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6);
-$shadow-glow: 0 0 20px rgba(59, 130, 246, 0.2);
-$shadow-glow-lg: 0 0 40px rgba(59, 130, 246, 0.15);
+$shadow-glow: 0 0 20px rgba(240, 255, 65, 0.15);
+$shadow-glow-lg: 0 0 40px rgba(240, 255, 65, 0.1);
 
 // ===== TRANSITIONS =====
 $transition-fast: 150ms ease;

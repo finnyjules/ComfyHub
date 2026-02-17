@@ -13,7 +13,7 @@ if (!creators.find((c) => c.handle === '@comfyui')) {
     handle: '@comfyui',
     displayName: 'ComfyUI',
     bio: 'The official ComfyUI account. Sharing templates, workflows, and best practices for the ComfyUI community.',
-    avatarUrl: 'https://i.pravatar.cc/150?u=cr_001',
+    avatarUrl: 'https://preview.redd.it/new-comfyui-logo-icon-v0-c05cowjywfze1.png?width=640&crop=smart&auto=webp&s=d381ee8ada0a2b993684c9ef26daf744c43350e2',
     bannerUrl: 'https://picsum.photos/seed/banner_comfyui/1200/300',
     badges: ['verified', 'staff-pick'],
     stats: {

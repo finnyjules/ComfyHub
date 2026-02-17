@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { collections } from '../../data/collections.js';
+import { getCollectionWorkflows } from '../../data/services/workflowService.js';
+import WorkflowGrid from '../../components/workflow/WorkflowGrid.vue';
+
+export function getStaticPaths() {
+  return collections.map((c) => ({
+    params: { id: c.id },
+    props: { collection: c },
+  }));
+}
+
+const { collection } = Astro.props;
+const workflows = getCollectionWorkflows(collection.id, 10);
+---
+
+<BaseLayout title={`${collection.title} Collection — ComfyCloud`} description={collection.description}>
+  <section class="collection-page">
+    <div class="collection-page__container">
+      <div class="collection-page__header">
+        <a href="/" class="collection-page__back">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5M12 19l-7-7 7-7" />
+          </svg>
+          Back
+        </a>
+        <h1 class="collection-page__title">{collection.title}</h1>
+        <p class="collection-page__description">{collection.description}</p>
+        <span class="collection-page__count">{workflows.length} workflows</span>
+      </div>
+      <WorkflowGrid workflows={workflows} columns="4" client:load />
+    </div>
+  </section>
+</BaseLayout>
+
+<style lang="scss">
+  .collection-page {
+    padding: $space-16 0 $space-12;
+
+    @include respond-below('md') {
+      padding: $space-10 0 $space-8;
+    }
+
+    &__container {
+      @include container;
+    }
+
+    &__header {
+      margin-bottom: $space-10;
+      max-width: 640px;
+
+      @include respond-below('md') {
+        margin-bottom: $space-6;
+      }
+    }
+
+    &__back {
+      display: inline-flex;
+      align-items: center;
+      gap: $space-1;
+      font-size: $text-sm;
+      color: $color-text-tertiary;
+      text-decoration: none;
+      margin-bottom: $space-6;
+      transition: color $transition-fast;
+
+      &:hover {
+        color: $color-text-primary;
+      }
+    }
+
+    &__title {
+      font-size: $text-4xl;
+      font-weight: $weight-bold;
+      color: $color-text-primary;
+      line-height: $leading-tight;
+      letter-spacing: -0.02em;
+      margin-bottom: $space-3;
+
+      @include respond-below('md') {
+        font-size: $text-2xl;
+      }
+    }
+
+    &__description {
+      font-size: $text-lg;
+      color: $color-text-secondary;
+      line-height: $leading-relaxed;
+      margin-bottom: $space-3;
+
+      @include respond-below('md') {
+        font-size: $text-base;
+      }
+    }
+
+    &__count {
+      font-size: $text-sm;
+      color: $color-text-tertiary;
+      font-weight: $weight-medium;
+    }
+  }
+</style>

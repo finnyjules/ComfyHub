@@ -30,7 +30,7 @@ const { staggerChildren } = useScrollAnimation()
 <template>
   <section ref="sectionRef" class="creator-showcase">
     <div class="creator-showcase__container">
-      <h2 class="creator-showcase__heading">Featured Creators</h2>
+      <h2 class="creator-showcase__heading">Discover the world's best creators</h2>
 
       <div
         v-for="row in rows"
@@ -119,11 +119,6 @@ const { staggerChildren } = useScrollAnimation()
     gap: $space-8;
     align-items: start;
     padding: $space-8 0;
-    border-top: 1px solid $color-border;
-
-    &:last-child {
-      border-bottom: 1px solid $color-border;
-    }
 
     @include respond-below('lg') {
       grid-template-columns: 1fr;

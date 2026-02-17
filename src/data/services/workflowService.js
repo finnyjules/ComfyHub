@@ -1,4 +1,5 @@
 import { workflows, categories, baseModels } from '../mock/index.js'
+import { collections } from '../collections.js'
 
 export function getAllSlugs() {
   return workflows.map((w) => w.slug)
@@ -208,6 +209,31 @@ export function getCommunityStats() {
     totalCreators: new Set(workflows.map((w) => w.creator.id)).size,
     totalFavorites: workflows.reduce((sum, w) => sum + w.stats.favorites, 0),
   }
+}
+
+export function getCollectionWorkflows(collectionId, limit = 10) {
+  const collection = collections.find((c) => c.id === collectionId)
+  if (!collection) return []
+
+  const { categories: cats, tags: filterTags, techniques: filterTech } = collection.filters
+
+  const scored = workflows
+    .filter((w) => {
+      const catMatch = cats.includes(w.category)
+      const tagMatch = w.tags.some((t) => filterTags.includes(t))
+      const techMatch = w.techniques.some((t) => filterTech.includes(t))
+      return catMatch || tagMatch || techMatch
+    })
+    .map((w) => {
+      let score = 0
+      if (cats.includes(w.category)) score += 2
+      score += w.tags.filter((t) => filterTags.includes(t)).length
+      score += w.techniques.filter((t) => filterTech.includes(t)).length
+      return { workflow: w, score }
+    })
+    .sort((a, b) => b.score - a.score || b.workflow.stats.runs - a.workflow.stats.runs)
+
+  return scored.slice(0, limit).map((s) => s.workflow)
 }
 
 // Helpers

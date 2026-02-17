@@ -1,13 +1,15 @@
 <script setup>
 import { ref, computed, watch, onMounted } from 'vue'
-import { getWorkflows, getByCategory } from '../../data/services/workflowService.js'
+import { getWorkflows, getByCategory, searchWorkflows, getFilterCounts } from '../../data/services/workflowService.js'
 import { categories } from '../../data/mock/generators/categories.js'
+import { baseModels } from '../../data/mock/generators/categories.js'
 import { useScrollAnimation } from '../../composables/useScrollAnimation.js'
 import WorkflowGrid from '../workflow/WorkflowGrid.vue'
 import AppSearchBar from '../global/AppSearchBar.vue'
 import BaseTabGroup from '../ui/BaseTabGroup.vue'
+import BaseDropdown from '../ui/BaseDropdown.vue'
 
-// Category filter state
+// Category filter state (top pills)
 const activeCategory = ref('all')
 const allCategories = [
   { id: 'all', label: 'All' },
@@ -22,17 +24,53 @@ const sortTabs = [
   { id: 'newest', label: 'Newest' },
 ]
 
+// Dropdown filter state
+const filters = ref({
+  category: [],
+  model: [],
+  difficulty: null,
+  outputType: [],
+  technique: [],
+})
+
+// Dropdown options
+const difficulties = ['Beginner', 'Intermediate', 'Advanced', 'Expert']
+
 // Pagination state
 const ITEMS_PER_PAGE = 24
 const page = ref(1)
 const allResults = ref([])
 const total = ref(0)
 
+// Filter counts for dropdowns
+const filterCounts = computed(() => getFilterCounts(allResults.value))
+
+const modelOptions = computed(() =>
+  baseModels
+    .map((m) => ({ id: m, label: m, count: filterCounts.value?.model?.[m] || 0 }))
+    .filter((m) => m.count > 0)
+)
+
+const difficultyOptions = computed(() =>
+  difficulties.map((d) => ({ id: d, label: d, count: filterCounts.value?.difficulty?.[d] || 0 }))
+)
+
 // Fetch data based on current filters
 function fetchData() {
   try {
     let result
-    if (activeCategory.value === 'all') {
+
+    // Check if sidebar filters are active
+    const hasFilters =
+      filters.value.category.length > 0 ||
+      filters.value.model.length > 0 ||
+      filters.value.difficulty ||
+      filters.value.outputType.length > 0 ||
+      filters.value.technique.length > 0
+
+    if (hasFilters) {
+      result = searchWorkflows('', filters.value, { page: 1, limit: 9999, sort: activeSort.value })
+    } else if (activeCategory.value === 'all') {
       result = getWorkflows({ page: 1, limit: 9999, sort: activeSort.value })
     } else {
       result = getByCategory(activeCategory.value, { page: 1, limit: 9999, sort: activeSort.value })
@@ -70,6 +108,12 @@ watch(activeSort, () => {
   page.value = 1
   fetchData()
 })
+
+// Watch dropdown filter changes
+watch(filters, () => {
+  page.value = 1
+  fetchData()
+}, { deep: true })
 
 // Scroll animation
 const sectionRef = ref(null)
@@ -114,27 +158,33 @@ onMounted(() => {
           </button>
         </div>
 
-        <!-- Sort tabs -->
+        <!-- Sort tabs + dropdown filters -->
         <div class="gallery-section__sort">
           <BaseTabGroup :tabs="sortTabs" v-model="activeSort" />
+          <div class="gallery-section__dropdowns">
+            <BaseDropdown label="Models" :options="modelOptions" v-model="filters.model" multiple />
+            <BaseDropdown label="Difficulty" :options="difficultyOptions" v-model="filters.difficulty" />
+          </div>
         </div>
       </div>
 
-      <!-- Grid -->
-      <WorkflowGrid
-        :workflows="displayedWorkflows"
-        variant="gallery"
-        columns="3"
-      />
+      <!-- Grid — full container width -->
+      <div class="gallery-section__body">
+        <WorkflowGrid
+          :workflows="displayedWorkflows"
+          variant="gallery"
+          columns="3"
+        />
 
-      <!-- Load more -->
-      <div v-if="canLoadMore" class="gallery-section__load-more">
-        <button class="gallery-section__load-btn" @click="loadMore">
-          Load more workflows
-        </button>
-        <p class="gallery-section__count">
-          Showing {{ displayedWorkflows.length }} of {{ total }}
-        </p>
+        <!-- Load more -->
+        <div v-if="canLoadMore" class="gallery-section__load-more">
+          <button class="gallery-section__load-btn" @click="loadMore">
+            Load more workflows
+          </button>
+          <p class="gallery-section__count">
+            Showing {{ displayedWorkflows.length }} of {{ total }}
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -254,9 +304,17 @@ onMounted(() => {
     }
   }
 
-  // Sort tabs
+  // Sort tabs + dropdown filters row
   &__sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 0;
+  }
+
+  &__dropdowns {
+    display: flex;
+    gap: $space-3;
   }
 
   // Grid gap override
