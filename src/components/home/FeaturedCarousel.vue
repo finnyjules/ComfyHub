@@ -255,9 +255,16 @@ onMounted(() => {
     }
   })
 
-  // Ticker parallax — shifts slightly on scroll
+  // Ticker fade-in with 2s delay, then parallax on scroll
   const ticker = sectionRef.value.querySelector('.featured-carousel__ticker')
   if (ticker) {
+    gsap.fromTo(ticker, { opacity: 0 }, {
+      opacity: 1,
+      duration: 1,
+      delay: 2,
+      ease: 'power2.inOut',
+    })
+
     gsap.to(ticker, {
       scrollTrigger: {
         trigger: sectionRef.value,
@@ -413,6 +420,7 @@ onUnmounted(() => {
     overflow: hidden;
     z-index: 0;
     pointer-events: none;
+    opacity: 0;
   }
 
   &__ticker-track {
@@ -471,7 +479,7 @@ onUnmounted(() => {
   &__track {
     display: flex;
     align-items: stretch;
-    gap: $space-3;
+    gap: $space-6;
     will-change: transform;
   }
 
