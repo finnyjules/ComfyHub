@@ -16,6 +16,9 @@ const trackRef = ref(null)
 const stageRef = ref(null)
 let autoAdvanceTimer = null
 let isAnimating = false
+let resizeObserver = null
+let resizeRafId = null
+let lastStageW = 0
 
 const prefersReducedMotion =
   typeof window !== 'undefined' &&
@@ -192,6 +195,23 @@ onMounted(() => {
 
   startAutoAdvance()
 
+  // Re-center active card on window resize only (not animation-triggered layout shifts)
+  if (stageRef.value) {
+    lastStageW = stageRef.value.offsetWidth
+    resizeObserver = new ResizeObserver((entries) => {
+      const newW = entries[0].contentRect.width
+      // Only react to actual width changes (not height shifts from animations)
+      if (Math.abs(newW - lastStageW) < 1) return
+      lastStageW = newW
+      if (isAnimating) return
+      if (resizeRafId) cancelAnimationFrame(resizeRafId)
+      resizeRafId = requestAnimationFrame(() => {
+        slideTo(currentIndex.value, false)
+      })
+    })
+    resizeObserver.observe(stageRef.value)
+  }
+
   if (prefersReducedMotion || !sectionRef.value) return
 
   // Entrance animation — cards fade up
@@ -233,6 +253,13 @@ onMounted(() => {
 
 onUnmounted(() => {
   stopAutoAdvance()
+  if (resizeObserver) {
+    resizeObserver.disconnect()
+    resizeObserver = null
+  }
+  if (resizeRafId) {
+    cancelAnimationFrame(resizeRafId)
+  }
 })
 </script>
 
