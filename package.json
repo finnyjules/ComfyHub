@@ -24,5 +24,8 @@
   },
   "devDependencies": {
     "node-html-parser": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
