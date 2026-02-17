@@ -270,8 +270,8 @@ onMounted(() => {
   &__pill {
     display: inline-flex;
     align-items: center;
-    padding: $space-2 $space-4;
-    font-size: $text-sm;
+    padding: 6px $space-3;
+    font-size: 13px;
     font-weight: $weight-medium;
     color: $color-text-secondary;
     background: transparent;

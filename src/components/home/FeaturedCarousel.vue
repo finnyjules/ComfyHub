@@ -188,9 +188,11 @@ function stopAutoAdvance() {
 }
 
 onMounted(() => {
-  // Set initial position without animation
-  nextTick(() => {
-    slideTo(0, false)
+  // Use double-RAF to ensure DOM is fully laid out before centering
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      slideTo(0, false)
+    })
   })
 
   startAutoAdvance()
@@ -212,9 +214,29 @@ onMounted(() => {
     resizeObserver.observe(stageRef.value)
   }
 
+  // Also re-center once all card images load (they affect card width)
+  if (trackRef.value) {
+    const images = trackRef.value.querySelectorAll('.featured-carousel__card-image')
+    let loaded = 0
+    const total = images.length
+    const onLoad = () => {
+      loaded++
+      if (loaded >= total && !isAnimating) {
+        slideTo(currentIndex.value, false)
+      }
+    }
+    images.forEach((img) => {
+      if (img.complete) {
+        loaded++
+      } else {
+        img.addEventListener('load', onLoad, { once: true })
+      }
+    })
+  }
+
   if (prefersReducedMotion || !sectionRef.value) return
 
-  // Entrance animation — cards fade up
+  // Entrance animation — cards fade up (no scale change to avoid layout shift)
   requestAnimationFrame(() => {
     const cards = sectionRef.value?.querySelectorAll('.featured-carousel__card')
     if (cards) {
@@ -222,11 +244,9 @@ onMounted(() => {
         gsap.fromTo(card, {
           y: 30,
           opacity: 0,
-          scale: 0.95,
         }, {
           y: 0,
           opacity: 1,
-          scale: 1,
           duration: 0.7,
           ease: 'power3.out',
           delay: i * 0.06,
