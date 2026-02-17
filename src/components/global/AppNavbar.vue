@@ -58,8 +58,7 @@ onMounted(() => {
         ease: 'power2.out',
       })
       gsap.to(navRef.value, {
-        background: 'rgba(16, 21, 26, 0.95)',
-        borderBottomColor: 'rgba(255, 255, 255, 0.1)',
+        background: '#171718',
         duration: 0.3,
       })
       if (logo) {
@@ -73,8 +72,7 @@ onMounted(() => {
         ease: 'power2.out',
       })
       gsap.to(navRef.value, {
-        background: 'rgba(16, 21, 26, 0.82)',
-        borderBottomColor: 'rgba(255, 255, 255, 0.06)',
+        background: '#171718',
         duration: 0.3,
       })
       if (logo) {
@@ -96,19 +94,19 @@ onUnmounted(() => {
         <a href="/" class="navbar__logo" aria-label="ComfyCloud Home">
           <img src="/comfy_logo.svg" alt="Comfy" class="navbar__logo-svg" />
         </a>
+      </div>
 
-        <div class="navbar__categories">
-          <a
-            v-for="link in navLinks"
-            :key="link.id"
-            :href="link.href"
-            class="navbar__category-link"
-          >
-            {{ link.label }}
-            <span v-if="link.isNew" class="navbar__new-badge">NEW</span>
-            <svg v-if="link.hasDropdown" class="navbar__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </a>
-        </div>
+      <div class="navbar__categories">
+        <a
+          v-for="link in navLinks"
+          :key="link.id"
+          :href="link.href"
+          class="navbar__category-link"
+        >
+          {{ link.label }}
+          <span v-if="link.isNew" class="navbar__new-badge">NEW</span>
+          <svg v-if="link.hasDropdown" class="navbar__chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </a>
       </div>
 
       <div class="navbar__right">
@@ -172,25 +170,22 @@ onUnmounted(() => {
   right: 0;
   height: $nav-height;
   z-index: $z-sticky;
-  background: rgba(16, 21, 26, 0.82);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: #171718;
 
   &__inner {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 $space-6;
     height: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
-    justify-content: space-between;
   }
 
   &__left {
     display: flex;
     align-items: center;
-    gap: $space-8;
+    justify-self: start;
   }
 
   &__logo {
@@ -210,6 +205,7 @@ onUnmounted(() => {
   &__categories {
     display: none;
     align-items: center;
+    justify-self: center;
     gap: 0;
 
     @include respond-to('lg') {
@@ -223,16 +219,17 @@ onUnmounted(() => {
     gap: 4px;
     padding: $space-2 $space-4;
     font-size: $text-sm;
-    font-weight: $weight-medium;
-    color: rgba(255, 255, 255, 0.7);
+    font-family: $font-brand;
+    font-weight: $weight-bold;
+    color: #ffffff;
     border-radius: $radius-md;
-    transition: color $transition-fast;
+    transition: opacity $transition-fast;
     white-space: nowrap;
     @include focus-ring;
     letter-spacing: -0.01em;
 
     &:hover {
-      color: #ffffff;
+      opacity: 0.75;
     }
   }
 
@@ -258,6 +255,7 @@ onUnmounted(() => {
     align-items: center;
     gap: $space-3;
     flex-shrink: 0;
+    justify-self: end;
   }
 
   &__search-btn {
@@ -332,10 +330,7 @@ onUnmounted(() => {
     top: $nav-height;
     left: 0;
     right: 0;
-    background: rgba(16, 21, 26, 0.95);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    background: #171718;
     padding: $space-4 $space-6 $space-6;
     display: flex;
     flex-direction: column;
