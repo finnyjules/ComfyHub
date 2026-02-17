@@ -1,0 +1,271 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Page Not Found — ComfyCloud">
+  <section class="not-found">
+    <!-- Dot grid background -->
+    <div class="not-found__dot-grid" aria-hidden="true"></div>
+
+    <!-- Decorative gradient orbs -->
+    <div class="not-found__orb not-found__orb--primary" aria-hidden="true"></div>
+    <div class="not-found__orb not-found__orb--secondary" aria-hidden="true"></div>
+    <div class="not-found__orb not-found__orb--accent" aria-hidden="true"></div>
+
+    <!-- Lost node decorative SVGs -->
+    <svg class="not-found__node not-found__node--1" aria-hidden="true" width="120" height="64" viewBox="0 0 120 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="118" height="62" rx="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3" />
+      <rect x="12" y="12" width="40" height="6" rx="3" fill="currentColor" opacity="0.3" />
+      <rect x="12" y="24" width="96" height="4" rx="2" fill="currentColor" opacity="0.15" />
+      <rect x="12" y="34" width="96" height="4" rx="2" fill="currentColor" opacity="0.15" />
+      <circle cx="106" cy="15" r="5" stroke="currentColor" stroke-width="1.5" opacity="0.4" />
+      <circle cx="14" cy="50" r="5" stroke="currentColor" stroke-width="1.5" opacity="0.4" />
+    </svg>
+
+    <svg class="not-found__node not-found__node--2" aria-hidden="true" width="90" height="52" viewBox="0 0 90 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="88" height="50" rx="8" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 3" />
+      <rect x="10" y="10" width="32" height="6" rx="3" fill="currentColor" opacity="0.3" />
+      <rect x="10" y="22" width="70" height="4" rx="2" fill="currentColor" opacity="0.15" />
+      <rect x="10" y="32" width="50" height="4" rx="2" fill="currentColor" opacity="0.15" />
+      <circle cx="78" cy="13" r="4" stroke="currentColor" stroke-width="1.5" opacity="0.4" />
+    </svg>
+
+    <div class="not-found__content">
+      <h1 class="not-found__code">404</h1>
+      <h2 class="not-found__title">Page not found</h2>
+      <p class="not-found__text">
+        The page you're looking for doesn't exist or has been moved.
+      </p>
+      <div class="not-found__actions">
+        <a href="/" class="not-found__btn">Back to Home</a>
+        <a href="/search" class="not-found__search-link">Try searching instead</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style lang="scss">
+  // ===== Keyframes =====
+  @keyframes float-glow {
+    0%, 100% {
+      transform: translateY(0);
+      filter: drop-shadow(0 0 20px rgba($color-primary, 0.3));
+    }
+    50% {
+      transform: translateY(-12px);
+      filter: drop-shadow(0 0 40px rgba($color-primary, 0.55));
+    }
+  }
+
+  @keyframes orb-drift-1 {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -20px) scale(1.05);
+    }
+    66% {
+      transform: translate(-15px, 10px) scale(0.95);
+    }
+  }
+
+  @keyframes orb-drift-2 {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(-25px, 15px) scale(1.08);
+    }
+  }
+
+  @keyframes node-float-1 {
+    0%, 100% {
+      transform: translate(0, 0) rotate(-6deg);
+      opacity: 0.12;
+    }
+    50% {
+      transform: translate(10px, -18px) rotate(-3deg);
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes node-float-2 {
+    0%, 100% {
+      transform: translate(0, 0) rotate(4deg);
+      opacity: 0.1;
+    }
+    50% {
+      transform: translate(-12px, -14px) rotate(7deg);
+      opacity: 0.18;
+    }
+  }
+
+  // ===== Component =====
+  .not-found {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    text-align: center;
+    padding: $space-10;
+    overflow: hidden;
+
+    // ----- Dot grid background -----
+    &__dot-grid {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(
+        circle,
+        rgba($color-text-tertiary, 0.18) 1px,
+        transparent 1px
+      );
+      background-size: 28px 28px;
+      pointer-events: none;
+      mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, black 20%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, black 20%, transparent 100%);
+    }
+
+    // ----- Gradient orbs -----
+    &__orb {
+      position: absolute;
+      border-radius: $radius-full;
+      pointer-events: none;
+      filter: blur(80px);
+
+      &--primary {
+        width: 360px;
+        height: 360px;
+        background: rgba($color-primary, 0.15);
+        top: 10%;
+        left: 15%;
+        animation: orb-drift-1 12s ease-in-out infinite;
+      }
+
+      &--secondary {
+        width: 280px;
+        height: 280px;
+        background: rgba($color-secondary, 0.12);
+        bottom: 10%;
+        right: 12%;
+        animation: orb-drift-2 10s ease-in-out infinite;
+      }
+
+      &--accent {
+        width: 200px;
+        height: 200px;
+        background: rgba($color-primary-light, 0.1);
+        top: 55%;
+        left: 55%;
+        animation: orb-drift-1 14s ease-in-out infinite reverse;
+      }
+    }
+
+    // ----- Lost node SVGs -----
+    &__node {
+      position: absolute;
+      color: $color-primary-light;
+      pointer-events: none;
+
+      &--1 {
+        top: 16%;
+        right: 10%;
+        animation: node-float-1 8s ease-in-out infinite;
+
+        @include respond-below('md') {
+          top: 6%;
+          right: 4%;
+          width: 80px;
+          height: auto;
+        }
+      }
+
+      &--2 {
+        bottom: 18%;
+        left: 8%;
+        color: $color-secondary;
+        animation: node-float-2 10s ease-in-out infinite;
+
+        @include respond-below('md') {
+          bottom: 8%;
+          left: 2%;
+          width: 64px;
+          height: auto;
+        }
+      }
+    }
+
+    // ----- Content -----
+    &__content {
+      position: relative;
+      z-index: 1;
+    }
+
+    &__code {
+      font-size: 8rem;
+      font-weight: $weight-bold;
+      background: linear-gradient(135deg, $color-primary, $color-secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+      margin-bottom: $space-4;
+      animation: float-glow 4s ease-in-out infinite;
+      will-change: transform, filter;
+
+      @include respond-to('md') {
+        font-size: 12rem;
+      }
+    }
+
+    &__title {
+      @include heading($text-3xl);
+      margin-bottom: $space-4;
+    }
+
+    &__text {
+      color: $color-text-tertiary;
+      font-size: $text-lg;
+      margin-bottom: $space-8;
+      max-width: 400px;
+      margin-inline: auto;
+    }
+
+    &__actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: $space-4;
+    }
+
+    &__btn {
+      display: inline-flex;
+      padding: $space-3 $space-6;
+      background: $color-primary;
+      color: white;
+      font-weight: $weight-medium;
+      border-radius: $radius-md;
+      transition: background-color $transition-fast, box-shadow $transition-fast;
+      @include focus-ring;
+
+      &:hover {
+        background: $color-primary-dark;
+        box-shadow: 0 0 20px rgba($color-primary, 0.35);
+      }
+    }
+
+    &__search-link {
+      color: $color-text-tertiary;
+      font-size: $text-sm;
+      text-decoration: none;
+      transition: color $transition-fast;
+      @include focus-ring;
+
+      &:hover {
+        color: $color-secondary;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    }
+  }
+</style>

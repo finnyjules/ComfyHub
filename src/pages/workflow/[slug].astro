@@ -1,0 +1,334 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getWorkflowBySlug, getAllSlugs } from '../../data/services/workflowService.js';
+import WorkflowOutputGallery from '../../components/workflow/WorkflowOutputGallery.vue';
+import WorkflowBadges from '../../components/workflow/WorkflowBadges.vue';
+import WorkflowDescription from '../../components/workflow/WorkflowDescription.vue';
+import WorkflowActions from '../../components/workflow/WorkflowActions.vue';
+import WorkflowModels from '../../components/workflow/WorkflowModels.vue';
+import WorkflowLicense from '../../components/workflow/WorkflowLicense.vue';
+import WorkflowParameters from '../../components/workflow/WorkflowParameters.vue';
+import WorkflowNodeGraph from '../../components/workflow/WorkflowNodeGraph.vue';
+import WorkflowVersionHistory from '../../components/workflow/WorkflowVersionHistory.vue';
+import CommentSection from '../../components/community/CommentSection.vue';
+import RelatedWorkflows from '../../components/community/RelatedWorkflows.vue';
+
+export function getStaticPaths() {
+  const slugs = getAllSlugs();
+  return slugs.map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const workflow = getWorkflowBySlug(slug);
+
+if (!workflow) {
+  return Astro.redirect('/404');
+}
+
+const bannerImage = workflow.outputImages?.[0]?.url || workflow.thumbnailUrl;
+const createdAgo = (() => {
+  const diff = Date.now() - new Date(workflow.createdAt).getTime();
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  if (days < 1) return 'today';
+  if (days === 1) return '1d ago';
+  if (days < 30) return `${days}d ago`;
+  const months = Math.floor(days / 30);
+  return months === 1 ? '1mo ago' : `${months}mo ago`;
+})();
+---
+
+<BaseLayout title={`${workflow.title} — ComfyCloud`} description={workflow.shortDescription}>
+  <div class="wf-detail">
+    <!-- Blurred banner background -->
+    <div class="wf-detail__banner">
+      <img src={bannerImage} alt="" class="wf-detail__banner-img" aria-hidden="true" />
+    </div>
+
+    <!-- Hero section: gallery left, info right -->
+    <section class="wf-detail__hero">
+      <div class="wf-detail__container">
+        <div class="wf-detail__hero-grid">
+          <!-- Left: Hero image -->
+          <div class="wf-detail__hero-left">
+            <img src={bannerImage} alt={workflow.title} class="wf-detail__hero-image" />
+          </div>
+
+          <!-- Right: Meta info -->
+          <div class="wf-detail__hero-right">
+            <WorkflowBadges
+              isStaffPick={workflow.isStaffPick}
+              isFeatured={workflow.isFeatured}
+              categoryLabel={workflow.categoryLabel}
+              client:visible
+            />
+
+            <h1 class="wf-detail__title">{workflow.title}</h1>
+
+            <div class="wf-detail__creator-row">
+              <img
+                src={workflow.creator.avatarUrl}
+                alt={workflow.creator.displayName}
+                class="wf-detail__creator-avatar"
+              />
+              <a
+                href={`/creators/${workflow.creator.handle.replace('@', '')}`}
+                class="wf-detail__creator-name"
+              >
+                {workflow.creator.displayName}
+              </a>
+              <span class="wf-detail__date">{createdAgo}</span>
+            </div>
+
+            <WorkflowDescription
+              shortDescription={workflow.shortDescription}
+              description={workflow.description}
+              client:visible
+            />
+
+            <!-- Tag pills -->
+            {workflow.tags?.length > 0 && (
+              <div class="wf-detail__tags">
+                {workflow.tags.map((tag) => (
+                  <span class="wf-detail__tag">#{tag}</span>
+                ))}
+              </div>
+            )}
+
+            <!-- Action buttons -->
+            <WorkflowActions
+              workflowId={workflow.id}
+              stats={workflow.stats}
+              client:load
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content section: gallery extras left, sidebar right -->
+    <section class="wf-detail__content">
+      <div class="wf-detail__container">
+        <div class="wf-detail__content-grid">
+          <!-- Left: node graph + thumbnail gallery -->
+          <div class="wf-detail__content-left">
+            <WorkflowNodeGraph nodes={workflow.nodes} edges={workflow.edges} client:visible />
+            <WorkflowOutputGallery images={workflow.outputImages} client:load />
+          </div>
+
+          <!-- Right: metadata sidebar -->
+          <div class="wf-detail__sidebar">
+            <WorkflowModels
+              baseModel={workflow.baseModel}
+              dependencies={workflow.dependencies}
+              client:visible
+            />
+            <WorkflowLicense license={workflow.license} client:visible />
+            <WorkflowParameters parameters={workflow.parameters} client:visible />
+            <WorkflowVersionHistory versions={workflow.versions} client:visible />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comments (full-width) -->
+    <section class="wf-detail__section">
+      <div class="wf-detail__container">
+        <CommentSection workflowId={workflow.id} client:visible />
+      </div>
+    </section>
+
+    <!-- Related workflows (full-width) -->
+    <section class="wf-detail__section">
+      <div class="wf-detail__container">
+        <RelatedWorkflows
+          workflowId={workflow.id}
+          category={workflow.category}
+          creatorId={workflow.creator.id}
+          client:visible
+        />
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style lang="scss">
+  .wf-detail {
+    position: relative;
+    background: $color-bg-primary;
+
+    // Blurred banner
+    &__banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 500px;
+      overflow: hidden;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    &__banner-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(32px);
+      opacity: 0.6;
+      transform: scale(1.1); // prevent blur edge artifacts
+      border-radius: $radius-2xl;
+    }
+
+    // Container
+    &__container {
+      @include container;
+    }
+
+    // Hero section
+    &__hero {
+      position: relative;
+      z-index: 1;
+      padding: $space-16 0 $space-10;
+
+      @include respond-below('md') {
+        padding: $space-8 0 $space-6;
+      }
+    }
+
+    &__hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 580px) 1fr;
+      gap: $space-10;
+      align-items: start;
+
+      @include respond-below('lg') {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__hero-left {
+      display: flex;
+      flex-direction: column;
+      gap: $space-4;
+    }
+
+    &__hero-image {
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: $radius-md;
+      border: 1px solid rgba(0, 0, 0, 0);
+    }
+
+    &__hero-right {
+      display: flex;
+      flex-direction: column;
+      gap: $space-4;
+    }
+
+    // Title
+    &__title {
+      font-size: $text-4xl;
+      font-weight: $weight-semibold;
+      color: $color-text-primary;
+      line-height: $leading-tight;
+      letter-spacing: -0.02em;
+
+      @include respond-below('md') {
+        font-size: $text-2xl;
+      }
+    }
+
+    // Creator row
+    &__creator-row {
+      display: flex;
+      align-items: center;
+      gap: $space-2;
+    }
+
+    &__creator-avatar {
+      width: 16px;
+      height: 16px;
+      border-radius: $radius-full;
+      object-fit: cover;
+    }
+
+    &__creator-name {
+      font-size: $text-xs;
+      color: $color-text-primary;
+      text-decoration: none;
+      transition: color $transition-fast;
+
+      &:hover {
+        color: $color-primary-light;
+      }
+    }
+
+    &__date {
+      font-size: $text-xs;
+      color: $color-text-primary;
+      margin-left: auto;
+    }
+
+    // Tags
+    &__tags {
+      display: flex;
+      gap: $space-3;
+      flex-wrap: wrap;
+      padding-top: $space-2;
+    }
+
+    &__tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: $space-1 $space-2;
+      border-radius: $radius-full;
+      font-size: $text-xs;
+      color: $color-text-primary;
+      background: #262729;
+    }
+
+    // Content section (below hero)
+    &__content {
+      position: relative;
+      z-index: 1;
+      padding-bottom: $space-10;
+    }
+
+    &__content-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 580px) 1fr;
+      gap: $space-10;
+      align-items: start;
+
+      @include respond-below('lg') {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__content-left {
+      display: flex;
+      flex-direction: column;
+      gap: $space-8;
+    }
+
+    // Sidebar
+    &__sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: $space-8;
+    }
+
+    // Full-width sections
+    &__section {
+      position: relative;
+      z-index: 1;
+      padding: $space-10 0;
+      border-top: 1px solid $color-border;
+
+      @include respond-below('md') {
+        padding: $space-6 0;
+      }
+    }
+  }
+</style>

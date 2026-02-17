@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SearchIsland from '../../components/search/SearchIsland.vue';
+import { categories } from '../../data/mock/generators/categories.js';
+
+export function getStaticPaths() {
+  return categories.map((cat) => ({
+    params: { category: cat.id },
+    props: { category: cat },
+  }));
+}
+
+const { category } = Astro.props;
+---
+
+<BaseLayout title={`${category.label} Workflows — ComfyCloud`}>
+  <SearchIsland initialCategory={category.id} categoryLabel={category.label} client:load />
+</BaseLayout>

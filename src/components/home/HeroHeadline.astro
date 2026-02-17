@@ -1,0 +1,44 @@
+---
+// No props needed — static content
+---
+
+<section class="hero-headline">
+  <div class="hero-headline__container">
+    <h1 class="hero-headline__title">
+      Discover hundreds of workflows from the world's best creators.<br />
+      Run them for <strong>free</strong> on Comfy Cloud
+    </h1>
+    <p class="hero-headline__updated">• Updated daily</p>
+  </div>
+</section>
+
+<style lang="scss">
+.hero-headline {
+  padding: $space-12 0 $space-8;
+  background: $color-bg-primary;
+  text-align: center;
+
+  &__container {
+    @include container;
+    max-width: 1075px;
+  }
+
+  &__title {
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    font-weight: $weight-normal;
+    color: $color-text-primary;
+    line-height: $leading-tight;
+    margin: 0;
+
+    strong {
+      font-weight: $weight-semibold;
+    }
+  }
+
+  &__updated {
+    margin-top: $space-4;
+    font-size: $text-sm;
+    color: $color-brand-yellow;
+  }
+}
+</style>

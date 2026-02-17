@@ -1,0 +1,377 @@
+---
+const productLinks = [
+  { href: '/download', label: 'Download' },
+  { href: '/cloud', label: 'Comfy Cloud' },
+  { href: '/enterprise', label: 'Enterprise' },
+  { href: '/gallery', label: 'Gallery' },
+  { href: '/template', label: 'Template' },
+];
+
+const resourceLinks = [
+  { href: 'https://blog.comfy.org/', label: 'Blog' },
+  { href: 'https://discord.gg/comfyorg', label: 'Discord' },
+  { href: 'https://github.com/comfyanonymous/ComfyUI', label: 'Github' },
+  { href: 'https://docs.comfy.org/', label: 'Docs' },
+  { href: 'https://www.youtube.com/@comfyorg', label: 'YouTube' },
+];
+
+const companyLinks = [
+  { href: '/about', label: 'About' },
+  { href: '/careers', label: 'Careers' },
+  { href: '/terms-of-service', label: 'Terms of Service' },
+  { href: '/privacy-policy', label: 'Privacy Policy' },
+];
+
+const contactLinks = [
+  { href: 'mailto:hello@comfy.org', label: 'hello@comfy.org', external: true },
+  { href: 'https://support.comfy.org/', label: 'Support', external: true },
+];
+
+const socialLinks = [
+  { href: 'https://discord.gg/comfyorg', label: 'Discord', icon: 'discord' },
+  { href: 'https://x.com/ComfyUI', label: 'X', icon: 'x' },
+  { href: 'https://reddit.com/r/comfyui', label: 'Reddit', icon: 'reddit' },
+  { href: 'https://github.com/comfyanonymous/ComfyUI', label: 'GitHub', icon: 'github' },
+  { href: 'https://www.linkedin.com/company/comfyui', label: 'LinkedIn', icon: 'linkedin' },
+  { href: 'https://www.instagram.com/comfyui', label: 'Instagram', icon: 'instagram' },
+];
+---
+
+<footer class="footer">
+  <!-- Main row: brand + columns -->
+  <div class="footer__main">
+    <!-- Brand: logo + social icons -->
+    <div class="footer__brand">
+      <a href="/" class="footer__logo" aria-label="Comfy Home">
+        <!-- Comfy logo SVG matching comfy.org -->
+        <svg viewBox="0 0 278 78" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__logo-svg">
+          <path d="M64.9 14.4C59.1 5.7 49.1 0 38.7 0 22.6 0 9 10.1 4.2 24.3c-.3.9-.6 1.8-.8 2.7C1.2 34 0 41.6 0 49.5c0 4.3.3 8.5.8 12.6.1.6.2 1.2.3 1.8C3.4 73.1 12.3 78 22 78c6.4 0 12.3-2.5 16.7-6.9 4.4-4.4 6.9-10.3 6.9-16.7 0-6.4-2.5-12.3-6.9-16.7-4.4-4.4-10.3-6.9-16.7-6.9-3.1 0-6 .6-8.7 1.7.5-2.4 1.2-4.7 2.1-6.9C19 17.4 28.2 12 38.7 12c6.4 0 12.3 2.5 16.7 6.9l9.5-4.5z" fill="#F0FF41"/>
+          <path d="M100.4 54.4c0 13.2-10.7 23.6-24.2 23.6-13.4 0-24.1-10.4-24.1-23.6s10.7-23.6 24.1-23.6c8.4 0 15.8 4.1 20.2 10.5l-10.3 5.8c-2.4-3.7-6-5.8-9.9-5.8-7.2 0-12.4 5.6-12.4 13.1s5.2 13.1 12.4 13.1c3.9 0 7.5-2.1 9.9-5.8l10.3 5.8v-.1z" fill="#F0FF41"/>
+          <path d="M142.6 31.8v45.5h-11.5V54.9c0-5.3-3.4-9.5-8.4-9.5-5 0-8.5 4.2-8.5 9.5v22.4h-11.5V31.8H114l.7 4.5c3.1-3.6 7.6-5.5 12.5-5.5 5.5 0 10.3 2.5 13.2 6.7 3.5-4.3 8.6-6.7 14.1-6.7 10.5 0 18.2 8.3 18.2 19.4v27.1H161V50.2c0-5.3-3.4-9.5-8.4-9.5s-8.5 4.2-8.5 9.5v27.1h-1.5V31.8z" fill="#F0FF41"/>
+          <path d="M186.6 31.8V18.4h11.7v13.4h9.2V42h-9.2v35.3h-11.7V42H179v-10.2h7.6z" fill="#F0FF41"/>
+          <path d="M228.7 78.2c-7.1 0-13-2.3-17.5-6.8l7.2-7.2c2.8 2.8 6.4 4 10.3 4 3.9 0 5.9-1.1 5.9-3.5 0-2.2-1.2-3-7.1-4.3-8.9-2-15.5-4.8-15.5-14.2 0-8.7 7.2-15.4 17.1-15.4 6.6 0 12.1 2.1 16.2 6.1l-7.1 7.1c-2.5-2.4-5.7-3.4-9.1-3.4-3.1 0-5.2 1.3-5.2 3.5 0 2.4 1.7 3.1 7.3 4.3 8.1 1.7 15.4 4.5 15.4 14.2-.1 9.3-7.8 15.6-17.9 15.6z" fill="#F0FF41"/>
+          <path d="M277.3 31.8l-18.7 53.7c-3.3 9.4-9.5 14.5-18.8 14.5v-11c4.6 0 7.1-2.1 8.8-6.8l-19-50.4h12.4l12.5 36.1 10.5-36.1h12.3z" fill="#F0FF41"/>
+        </svg>
+      </a>
+      <div class="footer__social">
+        <!-- Discord -->
+        <a href="https://discord.gg/comfyorg" target="_blank" rel="noopener noreferrer" aria-label="Discord" class="footer__social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03z"/></svg>
+        </a>
+        <!-- X / Twitter -->
+        <a href="https://x.com/ComfyUI" target="_blank" rel="noopener noreferrer" aria-label="X" class="footer__social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <!-- Reddit -->
+        <a href="https://reddit.com/r/comfyui" target="_blank" rel="noopener noreferrer" aria-label="Reddit" class="footer__social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm6.67-10a1.46 1.46 0 00-2.47-1 7.12 7.12 0 00-3.85-1.23l.65-3.13 2.17.45a1.04 1.04 0 101.07-1.09 1.05 1.05 0 00-1-.72l-2.43-.5a.27.27 0 00-.31.2l-.72 3.47a7.14 7.14 0 00-3.89 1.23 1.46 1.46 0 10-1.61 2.39 2.87 2.87 0 000 .44c0 2.24 2.61 4.06 5.83 4.06s5.83-1.82 5.83-4.06a2.87 2.87 0 000-.44 1.46 1.46 0 00.72-1.47zM9.08 13.5a1.04 1.04 0 111.04 1.04 1.04 1.04 0 01-1.04-1.04zm5.8 2.76a3.78 3.78 0 01-3.76 0 .27.27 0 010-.38.27.27 0 01.38 0 3.24 3.24 0 003 0 .27.27 0 01.38.38zm-.33-1.72a1.04 1.04 0 111.04-1.04 1.04 1.04 0 01-1.05 1.04z"/></svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/comfyanonymous/ComfyUI" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer__social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/company/comfyui" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="footer__social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/comfyui" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Link columns -->
+    <div class="footer__columns">
+      <!-- Product -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">Product</h3>
+        <ul class="footer__links">
+          {productLinks.map(link => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Resources (external links) -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">Resources</h3>
+        <ul class="footer__links">
+          {resourceLinks.map(link => (
+            <li>
+              <a href={link.href} target="_blank" rel="noopener noreferrer" class="footer__ext-link">
+                {link.label}
+                <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3.5 2.5h6v6" /><path d="M9.5 2.5L2.5 9.5" />
+                </svg>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">Company</h3>
+        <ul class="footer__links">
+          {companyLinks.map(link => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer__col">
+        <h3 class="footer__col-title">Contact</h3>
+        <ul class="footer__links">
+          {contactLinks.map(link => (
+            <li>
+              {link.external ? (
+                <a href={link.href} target="_blank" rel="noopener noreferrer" class="footer__ext-link">
+                  {link.label}
+                  {link.label !== 'hello@comfy.org' && (
+                    <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3.5 2.5h6v6" /><path d="M9.5 2.5L2.5 9.5" />
+                    </svg>
+                  )}
+                </a>
+              ) : (
+                <a href={link.href}>{link.label}</a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="footer__bottom">
+    <p>San Francisco, USA &nbsp;&nbsp;&nbsp;&nbsp; &copy; {new Date().getFullYear()} Comfy Org</p>
+  </div>
+</footer>
+
+<style lang="scss">
+  .footer {
+    background: #172DD7;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    @include respond-below('lg') {
+      padding: 60px $space-8;
+    }
+
+    @include respond-below('sm') {
+      padding: 40px $space-6;
+      gap: 48px;
+    }
+
+    // Main row: brand left + columns right
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1240px;
+      width: 100%;
+      margin: 0 auto;
+
+      @include respond-below('lg') {
+        flex-direction: column;
+        gap: 48px;
+      }
+    }
+
+    // Brand column (logo + social)
+    &__brand {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 290px;
+      flex-shrink: 0;
+
+      @include respond-below('lg') {
+        width: auto;
+      }
+    }
+
+    &__logo {
+      display: block;
+      width: 142px;
+      height: auto;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    &__logo-svg {
+      width: 142px;
+      height: auto;
+      display: block;
+    }
+
+    // Social icons row
+    &__social {
+      display: flex;
+      gap: 12px;
+    }
+
+    &__social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      color: white;
+      transition: opacity $transition-fast;
+
+      &:hover {
+        opacity: 0.7;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    // Link columns container
+    &__columns {
+      display: flex;
+      gap: 100px;
+
+      @include respond-below('lg') {
+        gap: 48px;
+        flex-wrap: wrap;
+      }
+
+      @include respond-below('sm') {
+        gap: 32px;
+      }
+    }
+
+    // Individual column
+    &__col {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 142px;
+    }
+
+    &__col-title {
+      font-family: $font-brand;
+      font-size: $text-base;
+      font-weight: $weight-normal;
+      color: $color-brand-yellow;
+      margin: 0;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      a {
+        font-family: $font-brand;
+        font-size: $text-base;
+        font-weight: $weight-normal;
+        color: white;
+        text-decoration: none;
+        transition: opacity $transition-fast;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    &__ext-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+
+      svg {
+        flex-shrink: 0;
+        opacity: 0.8;
+      }
+    }
+
+    // Bottom bar
+    &__bottom {
+      max-width: 1240px;
+      width: 100%;
+      margin: 0 auto;
+
+      p {
+        font-family: $font-brand;
+        font-size: $text-base;
+        font-weight: $weight-normal;
+        color: white;
+        margin: 0;
+      }
+    }
+  }
+</style>
+
+<script>
+import { gsap, ScrollTrigger } from '../../lib/gsap.js'
+
+const prefersReducedMotion =
+  window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+if (!prefersReducedMotion) {
+  const footer = document.querySelector('.footer')
+  if (footer) {
+    // Stagger footer columns
+    const columns = footer.querySelectorAll('.footer__brand, .footer__col')
+    gsap.from(columns, {
+      scrollTrigger: {
+        trigger: footer,
+        start: 'top 90%',
+        toggleActions: 'play none none none',
+      },
+      y: 40,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.12,
+      ease: 'power3.out',
+    })
+
+    // Social icons bounce-in
+    const socialLinks = footer.querySelectorAll('.footer__social-link')
+    gsap.from(socialLinks, {
+      scrollTrigger: {
+        trigger: footer,
+        start: 'top 90%',
+        toggleActions: 'play none none none',
+      },
+      scale: 0,
+      duration: 0.5,
+      stagger: 0.08,
+      delay: 0.4,
+      ease: 'back.out(1.7)',
+    })
+
+    // Bottom bar fade in
+    const bottomBar = footer.querySelector('.footer__bottom')
+    if (bottomBar) {
+      gsap.from(bottomBar, {
+        scrollTrigger: {
+          trigger: bottomBar,
+          start: 'top 95%',
+          toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.6,
+        ease: 'power2.inOut',
+      })
+    }
+  }
+}
+</script>

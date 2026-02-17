@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProfileIsland from '../../components/profile/ProfileIsland.vue';
+import { getCreator, getAllHandles } from '../../data/services/creatorService.js';
+
+export function getStaticPaths() {
+  const handles = getAllHandles();
+  return handles.map((handle) => ({ params: { handle } }));
+}
+
+const { handle } = Astro.params;
+const creator = getCreator(handle);
+
+if (!creator) {
+  return Astro.redirect('/404');
+}
+---
+
+<BaseLayout title={`${creator.displayName} — ComfyCloud`} description={creator.bio}>
+  <ProfileIsland creator={creator} client:load />
+</BaseLayout>

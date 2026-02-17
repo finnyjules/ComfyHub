@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroHeadline from '../components/home/HeroHeadline.astro';
+import FeaturedCarousel from '../components/home/FeaturedCarousel.vue';
+import GallerySection from '../components/home/GallerySection.vue';
+import CuratedCollections from '../components/home/CuratedCollections.vue';
+import CreatorShowcase from '../components/home/CreatorShowcase.vue';
+---
+
+<BaseLayout>
+  <HeroHeadline />
+  <FeaturedCarousel client:load />
+  <GallerySection client:load />
+  <CuratedCollections client:visible />
+  <CreatorShowcase client:visible />
+</BaseLayout>
