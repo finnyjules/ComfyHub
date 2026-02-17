@@ -5,11 +5,13 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "start": "node ./dist/server/entry.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "scrape": "node scripts/scrape-templates.js"
   },
   "dependencies": {
+    "@astrojs/node": "^9.5.3",
     "@astrojs/vue": "^5.1.4",
     "@faker-js/faker": "^10.3.0",
     "@nanostores/vue": "^1.0.1",
