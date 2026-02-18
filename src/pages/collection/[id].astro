@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { collections } from '../../data/collections.js';
-import { getCollectionWorkflows } from '../../data/services/workflowService.js';
+import { getCollectionWorkflows, getCollectionCreators } from '../../data/services/workflowService.js';
 import WorkflowGrid from '../../components/workflow/WorkflowGrid.vue';
+import CollectionCreators from '../../components/collection/CollectionCreators.vue';
 
 export function getStaticPaths() {
   return collections.map((c) => ({
@@ -13,6 +14,7 @@ export function getStaticPaths() {
 
 const { collection } = Astro.props;
 const workflows = getCollectionWorkflows(collection.id, 10);
+const creatorIds = getCollectionCreators(collection.id, 3);
 ---
 
 <BaseLayout title={`${collection.title} Collection — ComfyCloud`} description={collection.description}>
@@ -25,13 +27,19 @@ const workflows = getCollectionWorkflows(collection.id, 10);
           </svg>
           Back
         </a>
-        <h1 class="collection-page__title">{collection.title}</h1>
+        <h1 class="collection-page__title">ComfyUI for {collection.title}</h1>
         <p class="collection-page__description">{collection.description}</p>
         <span class="collection-page__count">{workflows.length} workflows</span>
       </div>
       <WorkflowGrid workflows={workflows} columns="4" client:load />
     </div>
   </section>
+
+  <CollectionCreators
+    title={`${collection.title} Creators using ComfyUI`}
+    creatorIds={creatorIds}
+    client:load
+  />
 </BaseLayout>
 
 <style lang="scss">
@@ -86,7 +94,7 @@ const workflows = getCollectionWorkflows(collection.id, 10);
     &__description {
       font-size: $text-lg;
       color: $color-text-secondary;
-      line-height: $leading-relaxed;
+      line-height: $leading-normal;
       margin-bottom: $space-3;
 
       @include respond-below('md') {
