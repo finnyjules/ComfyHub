@@ -236,6 +236,50 @@ export function getCollectionWorkflows(collectionId, limit = 10) {
   return scored.slice(0, limit).map((s) => s.workflow)
 }
 
+export function getCollectionCreators(collectionId, limit = 3) {
+  const collection = collections.find((c) => c.id === collectionId)
+  if (!collection) return []
+
+  const { categories: cats, tags: filterTags, techniques: filterTech } = collection.filters
+
+  // Find workflows matching this collection's filters
+  const matchingWorkflows = workflows.filter((w) => {
+    const catMatch = cats.includes(w.category)
+    const tagMatch = w.tags.some((t) => filterTags.includes(t))
+    const techMatch = w.techniques.some((t) => filterTech.includes(t))
+    return catMatch || tagMatch || techMatch
+  })
+
+  // Prioritize collection-specific creators (cr_{collectionId}_1, etc.)
+  const prefix = `cr_${collectionId}_`
+  const dedicatedIds = [...new Set(
+    matchingWorkflows
+      .filter((w) => w.creator.id.startsWith(prefix))
+      .map((w) => w.creator.id)
+  )]
+
+  if (dedicatedIds.length >= limit) return dedicatedIds.slice(0, limit)
+
+  // Fill remaining slots with dynamic ranking
+  const usedIds = new Set(dedicatedIds)
+  const creatorStats = {}
+  matchingWorkflows.forEach((w) => {
+    if (usedIds.has(w.creator.id)) return
+    if (!creatorStats[w.creator.id]) {
+      creatorStats[w.creator.id] = { id: w.creator.id, count: 0, runs: 0 }
+    }
+    creatorStats[w.creator.id].count++
+    creatorStats[w.creator.id].runs += w.stats.runs
+  })
+
+  const remaining = Object.values(creatorStats)
+    .sort((a, b) => b.count - a.count || b.runs - a.runs)
+    .slice(0, limit - dedicatedIds.length)
+    .map((s) => s.id)
+
+  return [...dedicatedIds, ...remaining]
+}
+
 // Helpers
 function sortWorkflows(arr, sort) {
   switch (sort) {
