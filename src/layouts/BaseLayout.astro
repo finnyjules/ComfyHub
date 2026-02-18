@@ -37,15 +37,11 @@ const {
   </head>
   <body>
     <AppNavbar client:load transition:persist />
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
-        <a href="#main-content" class="sr-only">Skip to main content</a>
-        <main id="main-content">
-          <slot />
-        </main>
-        <AppFooter />
-      </div>
-    </div>
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    <main id="main-content">
+      <slot />
+    </main>
+    <AppFooter />
     <SmoothScroll client:load />
     <SearchModal client:load />
     <AppToast client:idle />
@@ -53,7 +49,7 @@ const {
 </html>
 
 <style lang="scss" is:global>
-  #smooth-content {
+  body {
     padding-top: calc($nav-height + $space-6);
   }
 

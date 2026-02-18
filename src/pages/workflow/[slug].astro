@@ -9,7 +9,6 @@ import WorkflowModels from '../../components/workflow/WorkflowModels.vue';
 import WorkflowLicense from '../../components/workflow/WorkflowLicense.vue';
 import WorkflowNodeGraph from '../../components/workflow/WorkflowNodeGraph.vue';
 import BeforeAfterSlider from '../../components/ui/BeforeAfterSlider.vue';
-import WorkflowStickyPin from '../../components/workflow/WorkflowStickyPin.vue';
 import CommentSection from '../../components/community/CommentSection.vue';
 import RelatedWorkflows from '../../components/community/RelatedWorkflows.vue';
 
@@ -147,7 +146,6 @@ const createdAgo = (() => {
       </div>
     </section>
   </div>
-  <WorkflowStickyPin client:load />
 </BaseLayout>
 
 <style lang="scss">
@@ -229,11 +227,20 @@ const createdAgo = (() => {
       border: 1px solid rgba(0, 0, 0, 0);
     }
 
-    // Right column — pinned via ScrollTrigger for ScrollSmoother compat
+    // Right column (sticky sidebar)
     &__right {
+      position: sticky;
+      top: calc($nav-height + $space-6);
+      align-self: start;
+      max-height: calc(100vh - $nav-height - $space-8);
+      overflow-y: auto;
       display: flex;
       flex-direction: column;
       gap: $space-4;
+
+      // Hide scrollbar
+      scrollbar-width: none;
+      &::-webkit-scrollbar { display: none; }
 
       @include respond-below('lg') {
         position: static;

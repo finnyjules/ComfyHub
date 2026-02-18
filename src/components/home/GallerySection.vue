@@ -1,10 +1,9 @@
 <script setup>
-import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 import { getWorkflows, getByCategory, searchWorkflows, getFilterCounts } from '../../data/services/workflowService.js'
 import { categories } from '../../data/mock/generators/categories.js'
 import { baseModels } from '../../data/mock/generators/categories.js'
 import { useScrollAnimation } from '../../composables/useScrollAnimation.js'
-import { ScrollTrigger } from '../../lib/gsap.js'
 import WorkflowGrid from '../workflow/WorkflowGrid.vue'
 import AppSearchBar from '../global/AppSearchBar.vue'
 import BaseTabGroup from '../ui/BaseTabGroup.vue'
@@ -118,26 +117,11 @@ watch(filters, () => {
 
 // Scroll animation
 const sectionRef = ref(null)
-const toolbarRef = ref(null)
 const filtersRef = ref(null)
 const { flipInChildren, staggerChildren } = useScrollAnimation()
 
-let toolbarPin = null
-
 onMounted(() => {
   fetchData()
-
-  // Pin toolbar within the gallery section (replaces CSS sticky for ScrollSmoother compat)
-  if (toolbarRef.value && sectionRef.value) {
-    toolbarPin = ScrollTrigger.create({
-      trigger: toolbarRef.value,
-      pin: true,
-      start: 'top 80px', // below navbar + global padding
-      endTrigger: sectionRef.value,
-      end: 'bottom bottom',
-      pinSpacing: false,
-    })
-  }
 
   // Filter pills slide in
   if (filtersRef.value) {
@@ -149,17 +133,13 @@ onMounted(() => {
     flipInChildren(sectionRef.value, '.workflow-card')
   }
 })
-
-onUnmounted(() => {
-  toolbarPin?.kill()
-})
 </script>
 
 <template>
   <section ref="sectionRef" class="gallery-section">
     <div class="gallery-section__container">
-      <!-- Pinned toolbar: search + filters + sort -->
-      <div ref="toolbarRef" class="gallery-section__toolbar">
+      <!-- Sticky toolbar: search + filters + sort -->
+      <div class="gallery-section__toolbar">
         <!-- Search bar — full width, centered -->
         <div class="gallery-section__search">
           <AppSearchBar :placeholder="`Search ${total} workflows...`" />
@@ -219,8 +199,10 @@ onUnmounted(() => {
     @include container;
   }
 
-  // Toolbar — pinned via ScrollTrigger for ScrollSmoother compat
+  // Sticky toolbar — sticks below the navbar
   &__toolbar {
+    position: sticky;
+    top: calc($nav-height + $space-6);
     z-index: 50;
     padding-top: $space-4;
     padding-bottom: $space-4;
