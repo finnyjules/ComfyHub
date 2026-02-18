@@ -9,6 +9,7 @@ import WorkflowModels from '../../components/workflow/WorkflowModels.vue';
 import WorkflowLicense from '../../components/workflow/WorkflowLicense.vue';
 import WorkflowNodeGraph from '../../components/workflow/WorkflowNodeGraph.vue';
 import BeforeAfterSlider from '../../components/ui/BeforeAfterSlider.vue';
+import WorkflowStickyPin from '../../components/workflow/WorkflowStickyPin.vue';
 import CommentSection from '../../components/community/CommentSection.vue';
 import RelatedWorkflows from '../../components/community/RelatedWorkflows.vue';
 
@@ -146,32 +147,8 @@ const createdAgo = (() => {
       </div>
     </section>
   </div>
+  <WorkflowStickyPin client:load />
 </BaseLayout>
-
-<script>
-  import { ScrollTrigger } from '../../lib/gsap.js'
-
-  function initStickyRight() {
-    const right = document.querySelector('.wf-detail__right')
-    const grid = document.querySelector('.wf-detail__grid')
-    if (!right || !grid) return
-    // Only pin on desktop (when grid is two-column)
-    if (window.innerWidth < 1024) return
-
-    ScrollTrigger.create({
-      trigger: right,
-      pin: true,
-      start: 'top 80px',
-      endTrigger: grid,
-      end: 'bottom bottom',
-      pinSpacing: false,
-    })
-  }
-
-  // Run on initial load and Astro page transitions
-  initStickyRight()
-  document.addEventListener('astro:after-swap', initStickyRight)
-</script>
 
 <style lang="scss">
   .wf-detail {
