@@ -7,9 +7,8 @@ import WorkflowDescription from '../../components/workflow/WorkflowDescription.v
 import WorkflowActions from '../../components/workflow/WorkflowActions.vue';
 import WorkflowModels from '../../components/workflow/WorkflowModels.vue';
 import WorkflowLicense from '../../components/workflow/WorkflowLicense.vue';
-import WorkflowParameters from '../../components/workflow/WorkflowParameters.vue';
 import WorkflowNodeGraph from '../../components/workflow/WorkflowNodeGraph.vue';
-import WorkflowVersionHistory from '../../components/workflow/WorkflowVersionHistory.vue';
+import BeforeAfterSlider from '../../components/ui/BeforeAfterSlider.vue';
 import CommentSection from '../../components/community/CommentSection.vue';
 import RelatedWorkflows from '../../components/community/RelatedWorkflows.vue';
 
@@ -26,6 +25,7 @@ if (!workflow) {
 }
 
 const bannerImage = workflow.outputImages?.[0]?.url || workflow.thumbnailUrl;
+const hasBeforeAfter = workflow.hasBeforeAfter === true;
 const createdAgo = (() => {
   const diff = Date.now() - new Date(workflow.createdAt).getTime();
   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -44,17 +44,29 @@ const createdAgo = (() => {
       <img src={bannerImage} alt="" class="wf-detail__banner-img" aria-hidden="true" />
     </div>
 
-    <!-- Hero section: gallery left, info right -->
-    <section class="wf-detail__hero">
+    <!-- Main two-column layout -->
+    <section class="wf-detail__main">
       <div class="wf-detail__container">
-        <div class="wf-detail__hero-grid">
-          <!-- Left: Hero image -->
-          <div class="wf-detail__hero-left">
-            <img src={bannerImage} alt={workflow.title} class="wf-detail__hero-image" />
+        <div class="wf-detail__grid">
+          <!-- Left column: hero image + output gallery -->
+          <div class="wf-detail__left">
+            {hasBeforeAfter ? (
+              <BeforeAfterSlider
+                beforeImage={workflow.outputImages[0].url}
+                afterImage={workflow.outputImages[1].url}
+                client:visible
+              />
+            ) : (
+              <img src={bannerImage} alt={workflow.title} class="wf-detail__hero-image" />
+            )}
+
+            {!hasBeforeAfter && (
+              <WorkflowOutputGallery images={workflow.outputImages.slice(1)} client:load />
+            )}
           </div>
 
-          <!-- Right: Meta info -->
-          <div class="wf-detail__hero-right">
+          <!-- Right column: sticky meta + sidebar -->
+          <div class="wf-detail__right">
             <WorkflowBadges
               isStaffPick={workflow.isStaffPick}
               isFeatured={workflow.isFeatured}
@@ -100,31 +112,16 @@ const createdAgo = (() => {
               stats={workflow.stats}
               client:load
             />
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Content section: gallery extras left, sidebar right -->
-    <section class="wf-detail__content">
-      <div class="wf-detail__container">
-        <div class="wf-detail__content-grid">
-          <!-- Left: node graph + thumbnail gallery -->
-          <div class="wf-detail__content-left">
+            <hr class="wf-detail__divider" />
+
             <WorkflowNodeGraph nodes={workflow.nodes} edges={workflow.edges} client:visible />
-            <WorkflowOutputGallery images={workflow.outputImages} client:load />
-          </div>
-
-          <!-- Right: metadata sidebar -->
-          <div class="wf-detail__sidebar">
             <WorkflowModels
               baseModel={workflow.baseModel}
               dependencies={workflow.dependencies}
               client:visible
             />
             <WorkflowLicense license={workflow.license} client:visible />
-            <WorkflowParameters parameters={workflow.parameters} client:visible />
-            <WorkflowVersionHistory versions={workflow.versions} client:visible />
           </div>
         </div>
       </div>
@@ -150,6 +147,31 @@ const createdAgo = (() => {
     </section>
   </div>
 </BaseLayout>
+
+<script>
+  import { ScrollTrigger } from '../../lib/gsap.js'
+
+  function initStickyRight() {
+    const right = document.querySelector('.wf-detail__right')
+    const grid = document.querySelector('.wf-detail__grid')
+    if (!right || !grid) return
+    // Only pin on desktop (when grid is two-column)
+    if (window.innerWidth < 1024) return
+
+    ScrollTrigger.create({
+      trigger: right,
+      pin: true,
+      start: 'top 80px',
+      endTrigger: grid,
+      end: 'bottom bottom',
+      pinSpacing: false,
+    })
+  }
+
+  // Run on initial load and Astro page transitions
+  initStickyRight()
+  document.addEventListener('astro:after-swap', initStickyRight)
+</script>
 
 <style lang="scss">
   .wf-detail {
@@ -193,8 +215,8 @@ const createdAgo = (() => {
       @include container;
     }
 
-    // Hero section
-    &__hero {
+    // Main section
+    &__main {
       position: relative;
       z-index: 1;
       padding: $space-16 0 $space-10;
@@ -204,7 +226,7 @@ const createdAgo = (() => {
       }
     }
 
-    &__hero-grid {
+    &__grid {
       display: grid;
       grid-template-columns: minmax(0, 580px) 1fr;
       gap: $space-10;
@@ -215,7 +237,8 @@ const createdAgo = (() => {
       }
     }
 
-    &__hero-left {
+    // Left column
+    &__left {
       display: flex;
       flex-direction: column;
       gap: $space-4;
@@ -225,14 +248,27 @@ const createdAgo = (() => {
       width: 100%;
       aspect-ratio: 16/9;
       object-fit: cover;
-      border-radius: $radius-md;
+      border-radius: $radius-xl;
       border: 1px solid rgba(0, 0, 0, 0);
     }
 
-    &__hero-right {
+    // Right column — pinned via ScrollTrigger for ScrollSmoother compat
+    &__right {
       display: flex;
       flex-direction: column;
       gap: $space-4;
+
+      @include respond-below('lg') {
+        position: static;
+        max-height: none;
+        overflow-y: visible;
+      }
+    }
+
+    &__divider {
+      border: none;
+      border-top: 1px solid $color-border;
+      margin: $space-4 0;
     }
 
     // Title
@@ -296,37 +332,6 @@ const createdAgo = (() => {
       font-size: $text-xs;
       color: $color-text-primary;
       background: #262729;
-    }
-
-    // Content section (below hero)
-    &__content {
-      position: relative;
-      z-index: 1;
-      padding-bottom: $space-10;
-    }
-
-    &__content-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 580px) 1fr;
-      gap: $space-10;
-      align-items: start;
-
-      @include respond-below('lg') {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    &__content-left {
-      display: flex;
-      flex-direction: column;
-      gap: $space-8;
-    }
-
-    // Sidebar
-    &__sidebar {
-      display: flex;
-      flex-direction: column;
-      gap: $space-8;
     }
 
     // Full-width sections

@@ -171,12 +171,21 @@ function transformTemplates() {
 
     // Thumbnails
     const thumbnailUrl = t.thumbnails?.[0] || `https://picsum.photos/seed/${id}/400/300`
-    const outputImages = t.thumbnails?.length > 0
+    const realImages = t.thumbnails?.length > 0
       ? t.thumbnails.map((url, idx) => ({
         url,
         caption: idx === 0 ? 'Example output with default settings' : `Output variation ${idx + 1}`,
       }))
-      : generateOutputImages(id, faker.number.int({ min: 3, max: 5 }))
+      : []
+
+    // [DUMMY] Pad each workflow to 4-5 output images with placeholders
+    const dummyCount = Math.max(0, faker.number.int({ min: 4, max: 5 }) - realImages.length)
+    const dummyImages = Array.from({ length: dummyCount }, (_, j) => ({
+      url: `https://picsum.photos/seed/${id}_dummy${j}/800/600`,
+      caption: `Example variation ${realImages.length + j + 1}`,
+      _dummy: true, // [DUMMY] tag — remove these when real assets are available
+    }))
+    const outputImages = [...realImages, ...dummyImages]
 
     // Category mapping
     const categoryId = mapToCategory(t.type, t.category, t.categories)
@@ -276,6 +285,7 @@ function transformTemplates() {
       estimatedTime,
       thumbnailUrl,
       outputImages,
+      hasBeforeAfter: realImages.length === 2, // real scraped images form a before/after pair
       stats: {
         runs,
         favorites,

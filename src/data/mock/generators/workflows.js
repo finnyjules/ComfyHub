@@ -567,6 +567,7 @@ export function generateWorkflows(count = 200) {
       estimatedTime,
       thumbnailUrl: `https://picsum.photos/seed/${id}/400/300`,
       outputImages: generateOutputImages(id, outputImageCount),
+
       stats: {
         runs,
         favorites,

@@ -1,49 +1,33 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import { useGsap } from '../../composables/useGsap.js'
 
 const props = defineProps({
   images: { type: Array, default: () => [] },
 })
 
-const { gsap, animate } = useGsap()
+const lightboxIndex = ref(-1)
 
-const activeIndex = ref(0)
-const mainImageRef = ref(null)
-const lightboxOpen = ref(false)
-
-function selectImage(index) {
-  if (index === activeIndex.value) return
-  const direction = index > activeIndex.value ? 1 : -1
-  activeIndex.value = index
-
-  animate(() => {
-    if (!mainImageRef.value) return
-    gsap.fromTo(
-      mainImageRef.value,
-      { opacity: 0, x: direction * 40 },
-      { opacity: 1, x: 0, duration: 0.35, ease: 'power2.out' }
-    )
-  })
-}
-
-function openLightbox() {
-  lightboxOpen.value = true
+function openLightbox(index) {
+  lightboxIndex.value = index
 }
 
 function closeLightbox() {
-  lightboxOpen.value = false
+  lightboxIndex.value = -1
+}
+
+function prevImage() {
+  if (lightboxIndex.value > 0) lightboxIndex.value--
+}
+
+function nextImage() {
+  if (lightboxIndex.value < props.images.length - 1) lightboxIndex.value++
 }
 
 function handleKeydown(e) {
-  if (!lightboxOpen.value) return
+  if (lightboxIndex.value < 0) return
   if (e.key === 'Escape') closeLightbox()
-  if (e.key === 'ArrowRight' && activeIndex.value < props.images.length - 1) {
-    selectImage(activeIndex.value + 1)
-  }
-  if (e.key === 'ArrowLeft' && activeIndex.value > 0) {
-    selectImage(activeIndex.value - 1)
-  }
+  if (e.key === 'ArrowRight') nextImage()
+  if (e.key === 'ArrowLeft') prevImage()
 }
 
 onMounted(() => {
@@ -57,38 +41,21 @@ onUnmounted(() => {
 
 <template>
   <div class="output-gallery">
-    <!-- Main hero image -->
-    <div v-if="images.length" class="output-gallery__main" @click="openLightbox">
-      <img
-        ref="mainImageRef"
-        :src="images[activeIndex]?.url || images[activeIndex]"
-        alt="Workflow output"
-        class="output-gallery__image"
-      />
-      <span v-if="images.length > 1" class="output-gallery__counter">
-        {{ activeIndex + 1 }} / {{ images.length }}
-      </span>
-    </div>
-
-    <!-- 2x2 thumbnail grid -->
-    <div v-if="images.length > 1" class="output-gallery__thumbs">
-      <img
-        v-for="(img, i) in images.slice(0, 4)"
-        :key="i"
-        :src="img?.url || img"
-        :alt="`Output ${i + 1}`"
-        class="output-gallery__thumb"
-        :class="{ 'output-gallery__thumb--active': i === activeIndex }"
-        loading="lazy"
-        @click="selectImage(i)"
-      />
-    </div>
+    <img
+      v-for="(img, i) in images"
+      :key="i"
+      :src="img?.url || img"
+      :alt="img?.caption || `Output ${i + 1}`"
+      class="output-gallery__image"
+      loading="lazy"
+      @click="openLightbox(i)"
+    />
 
     <!-- Lightbox overlay -->
     <Teleport to="body">
       <Transition name="lightbox-fade">
         <div
-          v-if="lightboxOpen"
+          v-if="lightboxIndex >= 0"
           class="output-gallery__lightbox"
           role="dialog"
           aria-modal="true"
@@ -99,26 +66,26 @@ onUnmounted(() => {
             &times;
           </button>
           <img
-            :src="images[activeIndex]?.url || images[activeIndex]"
+            :src="images[lightboxIndex]?.url || images[lightboxIndex]"
             alt="Workflow output full size"
             class="output-gallery__lightbox-image"
           />
           <span v-if="images.length > 1" class="output-gallery__lightbox-counter">
-            {{ activeIndex + 1 }} / {{ images.length }}
+            {{ lightboxIndex + 1 }} / {{ images.length }}
           </span>
           <div v-if="images.length > 1" class="output-gallery__lightbox-nav">
             <button
               class="output-gallery__lightbox-btn"
-              :disabled="activeIndex === 0"
-              @click.stop="selectImage(activeIndex - 1)"
+              :disabled="lightboxIndex === 0"
+              @click.stop="prevImage"
               aria-label="Previous image"
             >
               &#8249;
             </button>
             <button
               class="output-gallery__lightbox-btn"
-              :disabled="activeIndex === images.length - 1"
-              @click.stop="selectImage(activeIndex + 1)"
+              :disabled="lightboxIndex === images.length - 1"
+              @click.stop="nextImage"
               aria-label="Next image"
             >
               &#8250;
@@ -136,61 +103,12 @@ onUnmounted(() => {
   flex-direction: column;
   gap: $space-4;
 
-  &__main {
-    position: relative;
-    border-radius: $radius-md;
-    overflow: hidden;
-    cursor: zoom-in;
-  }
-
   &__image {
     width: 100%;
     display: block;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-  }
-
-  &__counter {
-    position: absolute;
-    bottom: $space-3;
-    right: $space-3;
-    background: rgba(0, 0, 0, 0.65);
-    color: $color-text-primary;
-    font-size: $text-xs;
-    font-weight: $weight-medium;
-    padding: $space-1 $space-2;
-    border-radius: $radius-full;
-    pointer-events: none;
-    backdrop-filter: blur(4px);
-    font-variant-numeric: tabular-nums;
-  }
-
-  // 2x2 thumbnail grid (matching Figma)
-  &__thumbs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: $space-4;
-  }
-
-  &__thumb {
-    width: 100%;
-    aspect-ratio: 16/9;
-    object-fit: cover;
     border-radius: $radius-xl;
-    cursor: pointer;
-    border: 2px solid transparent;
-    opacity: 0.7;
-    transition: border-color $transition-fast, opacity $transition-fast;
-
-    &:hover {
-      border-color: $color-primary;
-      opacity: 0.9;
-    }
-
-    &--active {
-      border-color: $color-primary;
-      opacity: 1;
-    }
+    object-fit: cover;
+    cursor: zoom-in;
   }
 
   // Lightbox

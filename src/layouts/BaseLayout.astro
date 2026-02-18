@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from 'astro:transitions';
 import AppNavbar from '../components/global/AppNavbar.vue';
+import SmoothScroll from '../components/global/SmoothScroll.vue';
 import SearchModal from '../components/global/SearchModal.vue';
 import AppToast from '../components/global/AppToast.vue';
 import AppFooter from '../components/global/AppFooter.astro';
@@ -35,20 +36,25 @@ const {
     <ClientRouter />
   </head>
   <body>
-    <a href="#main-content" class="sr-only">Skip to main content</a>
     <AppNavbar client:load transition:persist />
-    <main id="main-content">
-      <slot />
-    </main>
-    <AppFooter />
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <a href="#main-content" class="sr-only">Skip to main content</a>
+        <main id="main-content">
+          <slot />
+        </main>
+        <AppFooter />
+      </div>
+    </div>
+    <SmoothScroll client:load />
     <SearchModal client:load />
     <AppToast client:idle />
   </body>
 </html>
 
 <style lang="scss" is:global>
-  body {
-    padding-top: $nav-height;
+  #smooth-content {
+    padding-top: calc($nav-height + $space-6);
   }
 
   main {

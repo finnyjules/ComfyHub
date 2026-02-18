@@ -82,14 +82,14 @@ onMounted(() => {
 // ===== COLLECTION ROW =====
 .collection-row {
   & + & {
-    margin-top: $space-16;
+    margin-top: $space-20;
   }
 
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: $space-5;
+    margin-bottom: $space-3;
   }
 
   &__title {

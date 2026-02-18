@@ -239,6 +239,13 @@ export function getCollectionWorkflows(collectionId, limit = 10) {
 // Helpers
 function sortWorkflows(arr, sort) {
   switch (sort) {
+    case 'featured':
+      return arr.sort((a, b) => {
+        const aFeat = (a.isFeatured || a.isStaffPick) ? 1 : 0
+        const bFeat = (b.isFeatured || b.isStaffPick) ? 1 : 0
+        if (bFeat !== aFeat) return bFeat - aFeat
+        return b.stats.runs - a.stats.runs
+      })
     case 'popular':
       return arr.sort((a, b) => b.stats.runs - a.stats.runs)
     case 'newest':

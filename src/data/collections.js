@@ -43,4 +43,37 @@ export const collections = [
       techniques: ['AnimateDiff', 'SVD', 'Frame Interpolation'],
     },
   },
+  {
+    id: 'gaming',
+    title: 'Gaming',
+    description:
+      'Generate game-ready assets, characters, textures, and concept art with AI-powered workflows for game development.',
+    filters: {
+      categories: ['image-generation', '3d'],
+      tags: ['character', 'game-asset', 'texture', 'concept-art', '3d', 'creature'],
+      techniques: ['ControlNet', 'img2img', 'Upscaling'],
+    },
+  },
+  {
+    id: '3d',
+    title: '3D',
+    description:
+      'Create and manipulate 3D content — from image-to-3D conversion to depth maps, normal maps, and mesh generation.',
+    filters: {
+      categories: ['3d'],
+      tags: ['3d', 'image-to-3d', 'normal-map', 'depth-map', 'mesh'],
+      techniques: ['Depth Map', 'ControlNet Depth', 'Normal Map'],
+    },
+  },
+  {
+    id: 'fashion',
+    title: 'Fashion',
+    description:
+      'Design and visualize fashion concepts — virtual try-on, outfit generation, style transfer, and lookbook creation.',
+    filters: {
+      categories: ['image-generation'],
+      tags: ['fashion', 'outfit', 'clothing', 'style-transfer', 'vton', 'try-on', 'product'],
+      techniques: ['Style Transfer', 'ControlNet', 'img2img', 'Face Swap'],
+    },
+  },
 ]

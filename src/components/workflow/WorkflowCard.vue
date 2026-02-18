@@ -142,7 +142,7 @@ function handleFavorite(e) {
   // Thumbnail
   &__thumbnail-wrap {
     position: relative;
-    aspect-ratio: 4/3;
+    aspect-ratio: 1/1;
     overflow: hidden;
     flex-shrink: 0;
   }
@@ -336,7 +336,7 @@ function handleFavorite(e) {
     .workflow-card__thumbnail-wrap {
       border-radius: $radius-lg;
       overflow: hidden;
-      aspect-ratio: 16/9;
+      aspect-ratio: 1/1;
     }
 
     .workflow-card__thumbnail {

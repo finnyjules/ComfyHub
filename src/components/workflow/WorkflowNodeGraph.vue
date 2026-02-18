@@ -310,8 +310,7 @@ const viewBoxStr = computed(() => {
   }
 
   &__svg {
-    min-width: 600px;
-    min-height: 300px;
+    min-height: 250px;
     width: 100%;
     transition: transform 0.05s linear;
   }
