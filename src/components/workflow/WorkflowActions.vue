@@ -21,7 +21,6 @@ const isFavorited = computed(() => favoriteIds.value.has(props.workflowId))
         <polygon points="6,3 20,12 6,21" />
       </svg>
       Run in Comfy Cloud
-      <span class="workflow-actions__count">{{ formatNumber(stats.runs) }}</span>
     </button>
 
     <!-- Download .json -->
@@ -32,7 +31,6 @@ const isFavorited = computed(() => favoriteIds.value.has(props.workflowId))
         <line x1="14.5" y1="4" x2="9.5" y2="20" />
       </svg>
       Download .json
-      <span class="workflow-actions__count">{{ formatNumber(stats.forks) }}</span>
     </button>
 
     <!-- Favorite -->

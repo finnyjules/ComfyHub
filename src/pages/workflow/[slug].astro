@@ -6,10 +6,7 @@ import WorkflowBadges from '../../components/workflow/WorkflowBadges.vue';
 import WorkflowDescription from '../../components/workflow/WorkflowDescription.vue';
 import WorkflowActions from '../../components/workflow/WorkflowActions.vue';
 import WorkflowModels from '../../components/workflow/WorkflowModels.vue';
-import WorkflowLicense from '../../components/workflow/WorkflowLicense.vue';
-import WorkflowNodeGraph from '../../components/workflow/WorkflowNodeGraph.vue';
 import BeforeAfterSlider from '../../components/ui/BeforeAfterSlider.vue';
-import CommentSection from '../../components/community/CommentSection.vue';
 import RelatedWorkflows from '../../components/community/RelatedWorkflows.vue';
 
 export function getStaticPaths() {
@@ -50,10 +47,16 @@ const createdAgo = (() => {
         <div class="wf-detail__grid">
           <!-- Left column: hero image + output gallery -->
           <div class="wf-detail__left">
+            <a href="#" onclick="history.back(); return false;" class="wf-detail__back">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+              </svg>
+              Back
+            </a>
             {hasBeforeAfter ? (
               <BeforeAfterSlider
-                beforeImage={workflow.outputImages[0].url}
-                afterImage={workflow.outputImages[1].url}
+                beforeImage={workflow.outputImages[1].url}
+                afterImage={workflow.outputImages[0].url}
                 client:visible
               />
             ) : (
@@ -97,6 +100,30 @@ const createdAgo = (() => {
               client:visible
             />
 
+            <!-- Action buttons -->
+            <WorkflowActions
+              workflowId={workflow.id}
+              stats={workflow.stats}
+              client:load
+            />
+
+            <div class="wf-detail__stats">
+              <div class="wf-detail__stat">
+                <span class="wf-detail__stat-value">1.2M</span>
+                <span class="wf-detail__stat-label">views</span>
+              </div>
+              <div class="wf-detail__stat">
+                <span class="wf-detail__stat-value">847.3k</span>
+                <span class="wf-detail__stat-label">runs</span>
+              </div>
+            </div>
+
+            <WorkflowModels
+              baseModel={workflow.baseModel}
+              dependencies={workflow.dependencies}
+              client:visible
+            />
+
             <!-- Tag pills -->
             {workflow.tags?.length > 0 && (
               <div class="wf-detail__tags">
@@ -106,31 +133,8 @@ const createdAgo = (() => {
               </div>
             )}
 
-            <!-- Action buttons -->
-            <WorkflowActions
-              workflowId={workflow.id}
-              stats={workflow.stats}
-              client:load
-            />
-
-            <hr class="wf-detail__divider" />
-
-            <WorkflowNodeGraph nodes={workflow.nodes} edges={workflow.edges} client:visible />
-            <WorkflowModels
-              baseModel={workflow.baseModel}
-              dependencies={workflow.dependencies}
-              client:visible
-            />
-            <WorkflowLicense license={workflow.license} client:visible />
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Comments (full-width) -->
-    <section class="wf-detail__section">
-      <div class="wf-detail__container">
-        <CommentSection workflowId={workflow.id} client:visible />
       </div>
     </section>
 
@@ -194,16 +198,31 @@ const createdAgo = (() => {
     &__main {
       position: relative;
       z-index: 1;
-      padding: $space-16 0 $space-10;
+      padding: 0 0 $space-10;
 
       @include respond-below('md') {
-        padding: $space-8 0 $space-6;
+        padding: 0 0 $space-6;
+      }
+    }
+
+    &__back {
+      display: inline-flex;
+      align-items: center;
+      gap: $space-1;
+      font-size: $text-sm;
+      color: $color-text-secondary;
+      text-decoration: none;
+      margin-bottom: $space-6;
+      transition: color $transition-fast;
+
+      &:hover {
+        color: $color-text-primary;
       }
     }
 
     &__grid {
       display: grid;
-      grid-template-columns: minmax(0, 580px) 1fr;
+      grid-template-columns: 2fr 1fr;
       gap: $space-10;
       align-items: start;
 
@@ -217,11 +236,16 @@ const createdAgo = (() => {
       display: flex;
       flex-direction: column;
       gap: $space-4;
+      padding-top: $space-16;
+
+      @include respond-below('md') {
+        padding-top: $space-8;
+      }
     }
 
     &__hero-image {
       width: 100%;
-      aspect-ratio: 16/9;
+      aspect-ratio: 1/1;
       object-fit: cover;
       border-radius: $radius-xl;
       border: 1px solid rgba(0, 0, 0, 0);
@@ -232,11 +256,12 @@ const createdAgo = (() => {
       position: sticky;
       top: calc($nav-height + $space-6);
       align-self: start;
-      max-height: calc(100vh - $nav-height - $space-8);
+      height: calc(100vh - $nav-height - $space-6);
       overflow-y: auto;
       display: flex;
       flex-direction: column;
-      gap: $space-4;
+      justify-content: center;
+      gap: $space-6;
 
       // Hide scrollbar
       scrollbar-width: none;
@@ -244,7 +269,7 @@ const createdAgo = (() => {
 
       @include respond-below('lg') {
         position: static;
-        max-height: none;
+        height: auto;
         overflow-y: visible;
       }
     }
@@ -299,12 +324,35 @@ const createdAgo = (() => {
       margin-left: auto;
     }
 
+    // Stats
+    &__stats {
+      display: flex;
+      flex-direction: column;
+      gap: $space-2;
+    }
+
+    &__stat {
+      display: flex;
+      align-items: baseline;
+      gap: $space-2;
+    }
+
+    &__stat-value {
+      font-size: $text-sm;
+      font-weight: $weight-semibold;
+      color: $color-text-primary;
+    }
+
+    &__stat-label {
+      font-size: $text-sm;
+      color: $color-text-tertiary;
+    }
+
     // Tags
     &__tags {
       display: flex;
       gap: $space-3;
       flex-wrap: wrap;
-      padding-top: $space-2;
     }
 
     &__tag {
@@ -323,7 +371,6 @@ const createdAgo = (() => {
       position: relative;
       z-index: 1;
       padding: $space-10 0;
-      border-top: 1px solid $color-border;
 
       @include respond-below('md') {
         padding: $space-6 0;

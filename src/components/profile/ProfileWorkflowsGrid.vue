@@ -1,7 +1,6 @@
 <script setup>
 import { ref, computed, watch } from 'vue'
 import { getCreatorWorkflows } from '../../data/services/creatorService.js'
-import { categories } from '../../data/mock/generators/categories.js'
 import WorkflowGrid from '../workflow/WorkflowGrid.vue'
 
 const props = defineProps({
@@ -13,7 +12,6 @@ const total = ref(0)
 const page = ref(1)
 const totalPages = ref(0)
 const sort = ref('popular')
-const category = ref(null)
 const isLoading = ref(false)
 const isLoadingMore = ref(false)
 
@@ -40,7 +38,6 @@ function fetchWorkflows(append = false) {
       page: page.value,
       limit,
       sort: sort.value,
-      category: category.value,
     })
     if (append) {
       workflows.value = [...workflows.value, ...result.data]
@@ -67,13 +64,8 @@ function handleSortChange(newSort) {
   sort.value = newSort
 }
 
-function handleCategoryChange(event) {
-  const val = event.target.value
-  category.value = val || null
-}
-
-// Reset and refetch when sort or category changes
-watch([sort, category], () => {
+// Reset and refetch when sort changes
+watch(sort, () => {
   page.value = 1
   fetchWorkflows()
 })
@@ -99,29 +91,11 @@ fetchWorkflows()
         </button>
       </div>
 
-      <!-- Category filter -->
-      <div class="profile-workflows__filter">
-        <select
-          class="profile-workflows__select"
-          :value="category ?? ''"
-          @change="handleCategoryChange"
-        >
-          <option value="">All Categories</option>
-          <option
-            v-for="cat in categories"
-            :key="cat.id"
-            :value="cat.id"
-          >
-            {{ cat.label }}
-          </option>
-        </select>
-      </div>
     </div>
 
     <!-- Results count -->
     <p class="profile-workflows__count">
       {{ total }} workflow{{ total !== 1 ? 's' : '' }}
-      <span v-if="category"> in {{ categories.find(c => c.id === category)?.label }}</span>
     </p>
 
     <!-- Loading -->
@@ -211,33 +185,6 @@ fetchWorkflows()
       background: $color-bg-tertiary;
       color: $color-text-primary;
       box-shadow: $shadow-sm;
-    }
-  }
-
-  &__filter {
-    flex-shrink: 0;
-  }
-
-  &__select {
-    appearance: none;
-    padding: $space-2 $space-8 $space-2 $space-3;
-    font-size: $text-sm;
-    font-family: $font-sans;
-    color: $color-text-primary;
-    background: $color-bg-secondary url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right $space-3 center;
-    border: 1px solid $color-border;
-    border-radius: $radius-md;
-    cursor: pointer;
-    transition: border-color $transition-fast;
-    @include focus-ring;
-
-    &:hover {
-      border-color: $color-border-hover;
-    }
-
-    option {
-      background: $color-bg-secondary;
-      color: $color-text-primary;
     }
   }
 

@@ -86,7 +86,7 @@ function handleTouchMove(e) {
   overflow: hidden;
   cursor: default;
   user-select: none;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1 / 1;
 
   &__image {
     display: block;
