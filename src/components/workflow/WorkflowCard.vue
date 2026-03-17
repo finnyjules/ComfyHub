@@ -5,6 +5,7 @@ import { $favoriteIds, toggleFavorite } from '../../stores/auth.js'
 import { formatNumber } from '../../lib/formatters.js'
 import BaseAvatar from '../ui/BaseAvatar.vue'
 import BaseBadge from '../ui/BaseBadge.vue'
+import BeforeAfterSlider from '../ui/BeforeAfterSlider.vue'
 
 const props = defineProps({
   workflow: { type: Object, required: true },
@@ -32,7 +33,14 @@ function handleFavorite(e) {
     <a :href="`/workflow/${workflow.slug}`" class="workflow-card__link">
       <!-- Thumbnail -->
       <div class="workflow-card__thumbnail-wrap">
+        <BeforeAfterSlider
+          v-if="workflow.hasBeforeAfter && workflow.outputImages?.length >= 2"
+          :beforeImage="workflow.outputImages[1].url"
+          :afterImage="workflow.outputImages[0].url"
+          class="workflow-card__thumbnail workflow-card__before-after"
+        />
         <img
+          v-else
           :src="workflow.thumbnailUrl"
           :alt="workflow.title"
           class="workflow-card__thumbnail"
@@ -145,6 +153,13 @@ function handleFavorite(e) {
     aspect-ratio: 1/1;
     overflow: hidden;
     flex-shrink: 0;
+
+    // Before/after slider fills the thumbnail container
+    :deep(.before-after) {
+      aspect-ratio: unset;
+      position: absolute;
+      inset: 0;
+    }
   }
 
   &__thumbnail {

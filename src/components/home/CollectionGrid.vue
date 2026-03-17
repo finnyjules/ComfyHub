@@ -9,12 +9,12 @@ const displayOrder = ['vfx', 'marketing', 'gaming', 'architecture', 'animation',
 
 // Override cover images for specific collections
 const coverOverrides = {
-  vfx: 'https://workflow-templates.vercel.app/templates/thumbnails/api_grok_video-1.webp',
-  marketing: 'https://workflow-templates.vercel.app/templates/thumbnails/templates-photo_to_product_vid-1.webp',
-  gaming: 'https://workflow-templates.vercel.app/templates/thumbnails/api_rodin_image_to_model-1.webp',
-  architecture: 'https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_edit_2509-1.webp',
-  animation: 'https://workflow-templates.vercel.app/templates/thumbnails/03_video_wan2_2_14B_i2v_subgraphed-1.webp',
-  fashion: 'https://workflow-templates.vercel.app/templates/thumbnails/templates-fashion_shoot_vton-1.webp',
+  vfx: 'https://www.comfy.org/workflows/thumbnails/api_grok_video-1.webp',
+  marketing: 'https://www.comfy.org/workflows/thumbnails/templates-photo_to_product_vid-1.webp',
+  gaming: 'https://www.comfy.org/workflows/thumbnails/api_rodin_image_to_model-1.webp',
+  architecture: 'https://www.comfy.org/workflows/thumbnails/image_qwen_image_edit_2509-1.webp',
+  animation: 'https://www.comfy.org/workflows/thumbnails/03_video_wan2_2_14B_i2v_subgraphed-1.webp',
+  fashion: 'https://www.comfy.org/workflows/thumbnails/templates-fashion_shoot_vton-1.webp',
 }
 
 const collectionBlocks = displayOrder
@@ -96,7 +96,7 @@ onMounted(() => {
 
   &__block {
     position: relative;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 3 / 1;
     border-radius: $radius-xl;
     overflow: hidden;
     text-decoration: none;

@@ -5,6 +5,7 @@ import vue from '@astrojs/vue';
 import node from "@astrojs/node";
 
 export default defineConfig({
+  devToolbar: { enabled: false },
   output: "static",
   adapter: node({
     mode: "standalone",

@@ -1,6 +1,6 @@
 {
   "scrapedAt": "2026-02-16T03:16:49.829Z",
-  "source": "https://workflow-templates.vercel.app/templates/",
+  "source": "https://www.comfy.org/workflows/",
   "count": 318,
   "templates": [
     {
@@ -10,8 +10,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_edit_2509-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_edit_2509-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_edit_2509-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_edit_2509-2.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -35,8 +35,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_nano_banana_pro-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_nano_banana_pro-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_nano_banana_pro-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_nano_banana_pro-2.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -60,8 +60,8 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_14B_i2v-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_14B_i2v-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_14B_i2v-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_14B_i2v-2.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -84,7 +84,7 @@
       "category": "Image",
       "type": "Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_z_image_turbo-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_z_image_turbo-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -107,8 +107,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_grok_image_edit-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_grok_image_edit-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_grok_image_edit-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_grok_image_edit-2.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -131,7 +131,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_z_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_z_image-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -154,7 +154,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_grok_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_grok_video-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -179,7 +179,7 @@
       "category": "Image",
       "type": "",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-qwen_multiangle-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-qwen_multiangle-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -197,8 +197,8 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_flux2-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_flux2-2.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -222,7 +222,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_google_gemini_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_google_gemini_image-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -247,7 +247,7 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/02_qwen_Image_edit_subgraphed-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/02_qwen_Image_edit_subgraphed-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -271,7 +271,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_i2v-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -294,8 +294,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_edit_2511-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_edit_2511-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_edit_2511-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_edit_2511-2.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -317,7 +317,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bytedance_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bytedance_image_to_video-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -341,7 +341,7 @@
       "category": "Image",
       "type": "Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2_klein_image_edit_4b_distilled-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_flux2_klein_image_edit_4b_distilled-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -364,7 +364,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bytedance_seedream4-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bytedance_seedream4-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -389,7 +389,7 @@
       "category": "Image",
       "type": "Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2_klein_image_edit_4b_base-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_flux2_klein_image_edit_4b_base-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -412,7 +412,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_Image_2512-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_Image_2512-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -457,7 +457,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_grok_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_grok_text_to_image-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -480,7 +480,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/03_video_wan2_2_14B_i2v_subgraphed-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/03_video_wan2_2_14B_i2v_subgraphed-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -503,7 +503,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_flux2_text_to_image-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -526,7 +526,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-1_click_multiple_character_angles-v1.0-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-1_click_multiple_character_angles-v1.0-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -570,8 +570,8 @@
       "category": "Image",
       "type": "FLF2V",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_14B_flf2v-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_14B_flf2v-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_14B_flf2v-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_14B_flf2v-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -594,7 +594,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_flux2-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_flux2-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -619,7 +619,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_14B_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_14B_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -642,7 +642,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux1_krea_dev-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux1_krea_dev-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -665,8 +665,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux1_dev_uso_reference_image_gen-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux1_dev_uso_reference_image_gen-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux1_dev_uso_reference_image_gen-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/flux1_dev_uso_reference_image_gen-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -689,8 +689,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_fill_inpaint_example-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_fill_inpaint_example-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux_fill_inpaint_example-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/flux_fill_inpaint_example-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -714,7 +714,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wan2_6_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_wan2_6_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -738,7 +738,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_veo3-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_veo3-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -762,8 +762,8 @@
       "category": "Image",
       "type": "Character Reference",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_omni_v2v-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_omni_v2v-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_omni_v2v-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_kling_omni_v2v-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -786,8 +786,8 @@
       "category": "Image",
       "type": "Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_z_image_turbo_fun_union_controlnet-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_z_image_turbo_fun_union_controlnet-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_z_image_turbo_fun_union_controlnet-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_z_image_turbo_fun_union_controlnet-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -810,7 +810,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_motion_control-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_motion_control-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -834,7 +834,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_dev_checkpoint_example-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux_dev_checkpoint_example-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -857,7 +857,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2_klein_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_flux2_klein_text_to_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -880,7 +880,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-multiple_consistent_shots-nb_pro-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-multiple_consistent_shots-nb_pro-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -904,7 +904,7 @@
       "category": "Image",
       "type": "Turbo",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_2512_with_2steps_lora-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_2512_with_2steps_lora-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -928,7 +928,7 @@
       "category": "Image",
       "type": "Text-to-Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_anima_preview-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_anima_preview-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -951,7 +951,7 @@
       "category": "Image",
       "type": "FLF2V",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bytedace_seedance1_5_flf2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bytedace_seedance1_5_flf2v-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -975,7 +975,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -998,8 +998,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_kontext_dev_basic-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_kontext_dev_basic-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux_kontext_dev_basic-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/flux_kontext_dev_basic-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1022,7 +1022,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_chroma_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_chroma_text_to_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1045,7 +1045,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_14B_animate-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_14B_animate-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1068,7 +1068,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_i2v_distilled-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_i2v_distilled-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1091,7 +1091,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bytedace_seedance1_5_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bytedace_seedance1_5_image_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1113,7 +1113,7 @@
       "category": "Image",
       "type": "Fashion",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-fashion_shoot_vton-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-fashion_shoot_vton-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1136,7 +1136,7 @@
       "category": "Image",
       "type": "Product",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-subject_product_swap-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-subject_product_swap-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1160,8 +1160,8 @@
       "category": "Image",
       "type": "Video to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_vace_14B_v2v-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_vace_14B_v2v-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan_vace_14B_v2v-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/video_wan_vace_14B_v2v-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1184,8 +1184,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_edit_2509_relight-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_edit_2509_relight-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_edit_2509_relight-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_edit_2509_relight-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1208,7 +1208,7 @@
       "category": "Image",
       "type": "Character",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-character_sheet-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-character_sheet-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1230,8 +1230,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_edit-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_edit-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_edit-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_edit-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1254,8 +1254,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wavespped_image_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wavespped_image_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_wavespped_image_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_wavespped_image_upscale-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1300,7 +1300,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/sdxl_refiner_prompt_example-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/sdxl_refiner_prompt_example-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1323,8 +1323,8 @@
       "category": "Image",
       "type": "Image Upscale",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_seedvr2_image_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_seedvr2_image_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility_seedvr2_image_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility_seedvr2_image_upscale-2.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -1346,7 +1346,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-1_click_multiple_scene_angles-v1.0-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-1_click_multiple_scene_angles-v1.0-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1368,7 +1368,7 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_instantx_controlnet-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_instantx_controlnet-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1392,8 +1392,8 @@
       "category": "Image",
       "type": "Style Transfer",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-image_to_real-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-image_to_real-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-image_to_real-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/templates-image_to_real-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1415,8 +1415,8 @@
       "category": "Image",
       "type": "Video Upscale",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_video_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_video_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility_video_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility_video_upscale-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1438,7 +1438,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_flf-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_flf-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1462,7 +1462,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_q3_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_q3_image_to_video-1.webp"
       ],
       "isPopular": true,
       "createdBy": "ComfyUI",
@@ -1485,7 +1485,7 @@
       "category": "Image",
       "type": "Text-to-Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/default-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/default-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1508,7 +1508,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling2_6_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling2_6_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1533,7 +1533,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_omni_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_omni_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1556,7 +1556,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wan_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_wan_image_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1580,7 +1580,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/sdxl_simple_example-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/sdxl_simple_example-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1603,8 +1603,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux2_max_sofa_swap-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux2_max_sofa_swap-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux2_max_sofa_swap-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux2_max_sofa_swap-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1628,7 +1628,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_fashion_billboard_generator-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_openai_fashion_billboard_generator-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1654,7 +1654,7 @@
       "category": "Image",
       "type": "",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/gsc_starter_1-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/gsc_starter_1-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1672,7 +1672,7 @@
       "category": "Image",
       "type": "Portrait",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-portrait_light_migration-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-portrait_light_migration-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1695,7 +1695,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_5B_fun_inpaint-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_5B_fun_inpaint-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1718,8 +1718,8 @@
       "category": "Image",
       "type": "Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image-qwen_image_edit_2511_lora_inflation-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image-qwen_image_edit_2511_lora_inflation-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image-qwen_image_edit_2511_lora_inflation-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image-qwen_image_edit_2511_lora_inflation-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1741,7 +1741,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_dev_full_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux_dev_full_text_to_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1764,8 +1764,8 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_omni_edit_video-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_omni_edit_video-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_omni_edit_video-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_kling_omni_edit_video-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1791,7 +1791,7 @@
       "category": "Image",
       "type": "Pose transfer",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video-wan21_scail-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video-wan21_scail-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1814,8 +1814,8 @@
       "category": "Image",
       "type": "Outpainting",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_fill_outpaint_example-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_fill_outpaint_example-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux_fill_outpaint_example-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/flux_fill_outpaint_example-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1839,8 +1839,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_grok_video_edit-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_grok_video_edit-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_grok_video_edit-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_grok_video_edit-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1863,8 +1863,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_canny_model_example-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_canny_model_example-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux_canny_model_example-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/flux_canny_model_example-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1888,7 +1888,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/01_get_started_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/01_get_started_text_to_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1911,7 +1911,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_5B_ti2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_5B_ti2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1934,7 +1934,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-6-key-frames-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-6-key-frames-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1957,8 +1957,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_instantx_inpainting_controlnet-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_instantx_inpainting_controlnet-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_instantx_inpainting_controlnet-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_instantx_inpainting_controlnet-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -1983,7 +1983,7 @@
       "category": "Image",
       "type": "Video to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_14B_fun_control-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_14B_fun_control-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2006,7 +2006,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_sora_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_openai_sora_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2030,8 +2030,8 @@
       "category": "Image",
       "type": "Image Upscale",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_topaz_image_enhance-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_topaz_image_enhance-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_topaz_image_enhance-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_topaz_image_enhance-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2054,7 +2054,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2078,8 +2078,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_nanobanana_pro_ai_image_fix-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_nanobanana_pro_ai_image_fix-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility_nanobanana_pro_ai_image_fix-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility_nanobanana_pro_ai_image_fix-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2102,7 +2102,7 @@
       "category": "Image",
       "type": "Image to 3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/3d_hunyuan3d-v2.1-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/3d_hunyuan3d-v2.1-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2125,7 +2125,7 @@
       "category": "Image",
       "type": "FLF2V",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_q2_flf2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_q2_flf2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2149,7 +2149,7 @@
       "category": "Image",
       "type": "Audio",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_1_infinitetalk-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_1_infinitetalk-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2174,7 +2174,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2_fp8-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_flux2_fp8-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2200,8 +2200,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_depth_lora_example-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_depth_lora_example-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux_depth_lora_example-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/flux_depth_lora_example-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2225,7 +2225,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_hunyuan_video_1.5_720p_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_hunyuan_video_1.5_720p_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2248,8 +2248,8 @@
       "category": "Image",
       "type": "Inpainting",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_vace_inpainting-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_vace_inpainting-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan_vace_inpainting-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/video_wan_vace_inpainting-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2272,7 +2272,7 @@
       "category": "Image",
       "type": "3D Model",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_hunyuan3d_image_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_hunyuan3d_image_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2296,8 +2296,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_magnific_skin_enhancer-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_magnific_skin_enhancer-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_magnific_skin_enhancer-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_magnific_skin_enhancer-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2321,8 +2321,8 @@
       "category": "Image",
       "type": "ControlNet",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_pose_to_video-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_pose_to_video-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_pose_to_video-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_pose_to_video-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2345,7 +2345,7 @@
       "category": "Image",
       "type": "Character Reference",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_q2_r2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_q2_r2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2369,8 +2369,8 @@
       "category": "Image",
       "type": "Relight",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_magnific_image_relight-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_magnific_image_relight-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_magnific_image_relight-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_magnific_image_relight-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2393,8 +2393,8 @@
       "category": "Image",
       "type": "Video to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/wan2.1_fun_control-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/wan2.1_fun_control-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/wan2.1_fun_control-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/wan2.1_fun_control-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2417,7 +2417,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bytedance_flf2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bytedance_flf2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2441,7 +2441,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-2x2_grid-character_bg_product-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-2x2_grid-character_bg_product-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2465,7 +2465,7 @@
       "category": "Image",
       "type": "Product",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-photo_to_product_vid-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-photo_to_product_vid-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2489,8 +2489,8 @@
       "category": "Image",
       "type": "ControlNet",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_depth_to_video-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_depth_to_video-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_depth_to_video-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_depth_to_video-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2513,7 +2513,7 @@
       "category": "Image",
       "type": "FLF2V",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_14B_fun_inpaint-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_14B_fun_inpaint-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2536,7 +2536,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_omnigen2_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_omnigen2_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2559,7 +2559,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_netayume_lumina_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_netayume_lumina_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2583,7 +2583,7 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_redux_model_example-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux_redux_model_example-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2607,7 +2607,7 @@
       "category": "Image",
       "type": "Product",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-car_product-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-car_product-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2632,7 +2632,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_ltxv_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_ltxv_image_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2656,7 +2656,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_from_photo_2_miniature-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_from_photo_2_miniature-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2680,8 +2680,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wavespped_seedvr2_ai_image_fix-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wavespped_seedvr2_ai_image_fix-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_wavespped_seedvr2_ai_image_fix-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_wavespped_seedvr2_ai_image_fix-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2725,8 +2725,8 @@
       "category": "Image",
       "type": "Inpainting",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux.1_fill_dev_OneReward-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux.1_fill_dev_OneReward-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_flux.1_fill_dev_OneReward-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_flux.1_fill_dev_OneReward-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2749,8 +2749,8 @@
       "category": "Image",
       "type": "Product",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-product_scene_relight-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-product_scene_relight-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-product_scene_relight-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/templates-product_scene_relight-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2774,8 +2774,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/hidream_e1_1-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/hidream_e1_1-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/hidream_e1_1-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/hidream_e1_1-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2798,7 +2798,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_chroma1_radiance_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_chroma1_radiance_text_to_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2821,7 +2821,7 @@
       "category": "Image",
       "type": "Layer Decompose",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_layered-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_layered-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2843,7 +2843,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-9grid_social_media-v2.0-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-9grid_social_media-v2.0-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2866,7 +2866,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_14B_s2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_14B_s2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2888,8 +2888,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_topaz_video_enhance-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_topaz_video_enhance-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_topaz_video_enhance-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_topaz_video_enhance-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2912,7 +2912,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wan_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_wan_text_to_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2936,7 +2936,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_q2_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_q2_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2959,7 +2959,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/ltxv_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/ltxv_image_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -2982,8 +2982,8 @@
       "category": "Image",
       "type": "Image Upscale",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-topaz_landscape_upscaler-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-topaz_landscape_upscaler-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility-topaz_landscape_upscaler-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility-topaz_landscape_upscaler-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3005,7 +3005,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/sdxlturbo_example-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/sdxlturbo_example-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3028,8 +3028,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-color_illustration-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-color_illustration-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-color_illustration-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/templates-color_illustration-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3051,8 +3051,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_chrono_edit_14B-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_chrono_edit_14B-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_chrono_edit_14B-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_chrono_edit_14B-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3075,8 +3075,8 @@
       "category": "Image",
       "type": "Image Upscale",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_nanobanana_pro_product_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_nanobanana_pro_product_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility_nanobanana_pro_product_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility_nanobanana_pro_product_upscale-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3099,7 +3099,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-sprite_sheet-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-sprite_sheet-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3121,8 +3121,8 @@
       "category": "Image",
       "type": "Video to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_moonvalley_video_to_video_motion_transfer-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_moonvalley_video_to_video_motion_transfer-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_moonvalley_video_to_video_motion_transfer-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_moonvalley_video_to_video_motion_transfer-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3146,7 +3146,7 @@
       "category": "Image",
       "type": "Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_kandinsky5_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_kandinsky5_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3169,7 +3169,7 @@
       "category": "Image",
       "type": "Portrait",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-2x2_grid-iso_miniatures-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-2x2_grid-iso_miniatures-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3191,8 +3191,8 @@
       "category": "Image",
       "type": "Video Upscale",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_seedvr2_video_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_seedvr2_video_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility_seedvr2_video_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility_seedvr2_video_upscale-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3214,7 +3214,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_ovis_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_ovis_text_to_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3237,8 +3237,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_stability_ai_i2i-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_stability_ai_i2i-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_stability_ai_i2i-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_stability_ai_i2i-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3262,7 +3262,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_newbieimage_exp0_1-t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_newbieimage_exp0_1-t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3286,7 +3286,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3309,7 +3309,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/sd3.5_simple_example-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/sd3.5_simple_example-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3332,8 +3332,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/ultility_hitpaw_general_image_enhance-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/ultility_hitpaw_general_image_enhance-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/ultility_hitpaw_general_image_enhance-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/ultility_hitpaw_general_image_enhance-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3356,7 +3356,7 @@
       "category": "Image",
       "type": "FLF2V",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/wan2.1_flf2v_720_f16-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/wan2.1_flf2v_720_f16-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3379,8 +3379,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wavespeed_flshvsr_video_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wavespeed_flshvsr_video_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_wavespeed_flshvsr_video_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_wavespeed_flshvsr_video_upscale-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3403,7 +3403,7 @@
       "category": "Image",
       "type": "Brand Design",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-textured_logo_elements-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-textured_logo_elements-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3426,8 +3426,8 @@
       "category": "Image",
       "type": "Style Reference",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_magnific_image_style_transfer-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_magnific_image_style_transfer-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_magnific_image_style_transfer-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_magnific_image_style_transfer-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3449,7 +3449,7 @@
       "category": "Image",
       "type": "Fashion",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-stitched_vid_contact_sheet-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-stitched_vid_contact_sheet-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3474,7 +3474,7 @@
       "category": "Image",
       "type": "LLM",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_google_gemini-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_google_gemini-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3497,8 +3497,8 @@
       "category": "Image",
       "type": "Video Upscale",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-gan_upscaler-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-gan_upscaler-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility-gan_upscaler-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility-gan_upscaler-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3521,8 +3521,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_runway_reference_to_image-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_runway_reference_to_image-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_runway_reference_to_image-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_runway_reference_to_image-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3546,8 +3546,8 @@
       "category": "Image",
       "type": "ControlNet",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_canny_to_video-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_canny_to_video-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_canny_to_video-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_canny_to_video-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3570,8 +3570,8 @@
       "category": "Image",
       "type": "Outpainting",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bria_image_outpainting-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bria_image_outpainting-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bria_image_outpainting-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_bria_image_outpainting-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3594,8 +3594,8 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_union_control_lora-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_union_control_lora-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_union_control_lora-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_union_control_lora-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3619,8 +3619,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-qwen_image_edit-crop_and_stitch-fusion-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-qwen_image_edit-crop_and_stitch-fusion-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-qwen_image_edit-crop_and_stitch-fusion-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/templates-qwen_image_edit-crop_and_stitch-fusion-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3643,8 +3643,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux_1_kontext_multiple_images_input-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux_1_kontext_multiple_images_input-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux_1_kontext_multiple_images_input-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux_1_kontext_multiple_images_input-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3667,8 +3667,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux_1_kontext_pro_image-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux_1_kontext_pro_image-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux_1_kontext_pro_image-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux_1_kontext_pro_image-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3691,7 +3691,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wanmove_480p-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wanmove_480p-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3715,8 +3715,8 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_controlnet_patch-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_controlnet_patch-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_controlnet_patch-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_controlnet_patch-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3740,7 +3740,7 @@
       "category": "Image",
       "type": "Layer Decompose",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_qwen_image_layered_control-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_qwen_image_layered_control-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3762,7 +3762,7 @@
       "category": "Image",
       "type": "3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_meshy_image_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_meshy_image_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3786,7 +3786,7 @@
       "category": "Image",
       "type": "",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/gsc_starter_2-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/gsc_starter_2-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3804,8 +3804,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/sd3.5_large_depth-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/sd3.5_large_depth-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/sd3.5_large_depth-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/sd3.5_large_depth-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3829,8 +3829,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_nanobanana_pro_illustration_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_nanobanana_pro_illustration_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility_nanobanana_pro_illustration_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility_nanobanana_pro_illustration_upscale-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3853,8 +3853,8 @@
       "category": "Image",
       "type": "Image Upscale",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_topaz_illustration_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_topaz_illustration_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility_topaz_illustration_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility_topaz_illustration_upscale-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3876,7 +3876,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-split_stack-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-split_stack-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3899,7 +3899,7 @@
       "category": "Image",
       "type": "Image to 3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/04_hunyuan_3d_2.1_subgraphed-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/04_hunyuan_3d_2.1_subgraphed-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3922,7 +3922,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_recraft_style_reference-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_recraft_style_reference-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3946,7 +3946,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_runway_first_last_frame-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_runway_first_last_frame-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3970,8 +3970,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_stability_ai_sd3.5_i2i-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_stability_ai_sd3.5_i2i-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_stability_ai_sd3.5_i2i-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_stability_ai_sd3.5_i2i-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -3995,7 +3995,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/hidream_i1_dev-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/hidream_i1_dev-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4018,7 +4018,7 @@
       "category": "Image",
       "type": "Character Reference",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wan_r2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_wan_r2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4063,7 +4063,7 @@
       "category": "Image",
       "type": "Brand Design",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-3D_logo_texture_animation-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-3D_logo_texture_animation-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4086,8 +4086,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bria_image_edit-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bria_image_edit-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bria_image_edit-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_bria_image_edit-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4110,7 +4110,7 @@
       "category": "Image",
       "type": "Brand Design",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-textured_logotype-v2.1-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-textured_logotype-v2.1-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4134,8 +4134,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_luma_photon_i2i-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_luma_photon_i2i-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_luma_photon_i2i-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_luma_photon_i2i-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4159,7 +4159,7 @@
       "category": "Image",
       "type": "3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_meshy_multi_image_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_meshy_multi_image_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4183,7 +4183,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_video_extension-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_video_extension-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4207,7 +4207,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/template-Animation_Trajectory_Control_Wan_ATI-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/template-Animation_Trajectory_Control_Wan_ATI-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4229,7 +4229,7 @@
       "category": "Image",
       "type": "Product",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-subject_holding_product-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-subject_holding_product-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4253,7 +4253,7 @@
       "category": "Image",
       "type": "Image to Model",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_tripo3_0_image_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_tripo3_0_image_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4277,7 +4277,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bytedace_seedance1_5_text_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bytedace_seedance1_5_text_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4300,7 +4300,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_omni_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_omni_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4345,7 +4345,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/text_to_video_wan-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/text_to_video_wan-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4368,8 +4368,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_recraft_creative_image_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_recraft_creative_image_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility_recraft_creative_image_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility_recraft_creative_image_upscale-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4413,8 +4413,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/sd3.5_large_canny_controlnet_example-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/sd3.5_large_canny_controlnet_example-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/sd3.5_large_canny_controlnet_example-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/sd3.5_large_canny_controlnet_example-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4438,7 +4438,7 @@
       "category": "Image",
       "type": "LLM",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_chat-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_openai_chat-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4461,7 +4461,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_q3_text_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_q3_text_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4484,7 +4484,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_t2v_distilled-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_t2v_distilled-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4507,8 +4507,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux_1_kontext_max_image-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux_1_kontext_max_image-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux_1_kontext_max_image-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux_1_kontext_max_image-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4552,7 +4552,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_vace_14B_ref2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan_vace_14B_ref2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4575,7 +4575,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux_pro_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux_pro_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4598,7 +4598,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_runway_gen4_turo_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_runway_gen4_turo_image_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4622,7 +4622,7 @@
       "category": "Image",
       "type": "Video to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_14B_fun_camera-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_14B_fun_camera-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4645,8 +4645,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/hidream_e1_full-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/hidream_e1_full-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/hidream_e1_full-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/hidream_e1_full-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4669,7 +4669,7 @@
       "category": "Image",
       "type": "FLF2V",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_vace_flf2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan_vace_flf2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4692,7 +4692,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/hidream_i1_full-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/hidream_i1_full-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4715,7 +4715,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wan2_6_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_wan2_6_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4739,7 +4739,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_schnell-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux_schnell-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4762,8 +4762,8 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_recraft_crisp_image_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_recraft_crisp_image_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility_recraft_crisp_image_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility_recraft_crisp_image_upscale-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4786,7 +4786,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_to_video_wan-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_to_video_wan-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4809,8 +4809,8 @@
       "category": "Image",
       "type": "Image Upscale",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_interpolation_image_upscale-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility_interpolation_image_upscale-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility_interpolation_image_upscale-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility_interpolation_image_upscale-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4832,7 +4832,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_humo-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_humo-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4854,7 +4854,7 @@
       "category": "Image",
       "type": "Fashion",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-fashion_shoot_prompt_doodle-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-fashion_shoot_prompt_doodle-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4877,8 +4877,8 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_ati-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_ati-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan_ati-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/video_wan_ati-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4900,7 +4900,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_luma_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_luma_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4924,8 +4924,8 @@
       "category": "Image",
       "type": "Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_lotus_depth_v1_1-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_lotus_depth_v1_1-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_lotus_depth_v1_1-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_lotus_depth_v1_1-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4948,8 +4948,8 @@
       "category": "Image",
       "type": "Video Upscale",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/ultility_hitpaw_video_enhance-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/ultility_hitpaw_video_enhance-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/ultility_hitpaw_video_enhance-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/ultility_hitpaw_video_enhance-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4972,8 +4972,8 @@
       "category": "Image",
       "type": "Depth Map",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-depthAnything-v2-relative-video-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-depthAnything-v2-relative-video-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility-depthAnything-v2-relative-video-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility-depthAnything-v2-relative-video-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -4996,8 +4996,8 @@
       "category": "Image",
       "type": "OpenPose",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-openpose-video-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-openpose-video-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility-openpose-video-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility-openpose-video-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5017,7 +5017,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2.1_alpha_t2v_14B-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2.1_alpha_t2v_14B-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5040,7 +5040,7 @@
       "category": "Image",
       "type": "Text to Audio",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/05_audio_ace_step_1_t2a_song_subgraphed-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/05_audio_ace_step_1_t2a_song_subgraphed-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5063,7 +5063,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/hunyuan_video_text_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/hunyuan_video_text_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5086,7 +5086,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wanmove_480p_hallucination-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wanmove_480p_hallucination-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5110,7 +5110,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_omni_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_omni_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5133,7 +5133,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_recraft_image_gen_with_style_control-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_recraft_image_gen_with_style_control-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5157,7 +5157,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_kandinsky5_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_kandinsky5_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5180,8 +5180,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_image_1_i2i-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_image_1_i2i-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_openai_image_1_i2i-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_openai_image_1_i2i-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5205,7 +5205,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_hunyuan3d_text_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_hunyuan3d_text_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5229,7 +5229,7 @@
       "category": "Image",
       "type": "Image to 3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_rodin_gen2-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_rodin_gen2-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5253,8 +5253,8 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_omnigen2_image_edit-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_omnigen2_image_edit-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_omnigen2_image_edit-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_omnigen2_image_edit-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5277,7 +5277,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/sdxl_revision_text_prompts-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/sdxl_revision_text_prompts-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5300,7 +5300,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_veo2_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_veo2_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5324,7 +5324,7 @@
       "category": "Image",
       "type": "",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/gsc_starter_3-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/gsc_starter_3-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5342,7 +5342,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_kandinsky5_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_kandinsky5_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5365,8 +5365,8 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_image_1_multi_inputs-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_image_1_multi_inputs-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_openai_image_1_multi_inputs-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_openai_image_1_multi_inputs-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5390,7 +5390,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_runway_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_runway_text_to_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5414,7 +5414,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_reference_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_reference_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5438,7 +5438,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_wan_text_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_wan_text_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5462,7 +5462,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-8x8_grid-pfp-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-8x8_grid-pfp-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5484,8 +5484,8 @@
       "category": "Image",
       "type": "3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/3d_hunyuan3d_multiview_to_model-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/3d_hunyuan3d_multiview_to_model-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/3d_hunyuan3d_multiview_to_model-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/3d_hunyuan3d_multiview_to_model-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5508,7 +5508,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_stability_ai_sd3.5_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_stability_ai_sd3.5_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5532,7 +5532,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_start_end_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_start_end_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5556,8 +5556,8 @@
       "category": "Image",
       "type": "Outpainting",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_vace_outpainting-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_vace_outpainting-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan_vace_outpainting-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/video_wan_vace_outpainting-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5602,7 +5602,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/ltxv_text_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/ltxv_text_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5625,8 +5625,8 @@
       "category": "Image",
       "type": "Video to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_moonvalley_video_to_video_pose_control-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_moonvalley_video_to_video_pose_control-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_moonvalley_video_to_video_pose_control-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_moonvalley_video_to_video_pose_control-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5650,8 +5650,8 @@
       "category": "Image",
       "type": "Inpainting",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_image_1_inpaint-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_image_1_inpaint-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_openai_image_1_inpaint-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_openai_image_1_inpaint-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5675,7 +5675,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/hidream_i1_fast-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/hidream_i1_fast-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5698,7 +5698,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_hunyuan_video_1.5_720p_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_hunyuan_video_1.5_720p_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5721,7 +5721,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2_2_5B_fun_control-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2_2_5B_fun_control-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5744,7 +5744,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_stability_ai_stable_image_ultra_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_stability_ai_stable_image_ultra_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5768,8 +5768,8 @@
       "category": "Image",
       "type": "Product",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-assemble_dieline-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-assemble_dieline-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-assemble_dieline-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/templates-assemble_dieline-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5792,7 +5792,7 @@
       "category": "Image",
       "type": "Preprocessor",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-frame_interpolation-film-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility-frame_interpolation-film-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5812,7 +5812,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan_vace_14B_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan_vace_14B_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5835,7 +5835,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling2_6_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling2_6_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5860,7 +5860,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_ltxv_text_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_ltxv_text_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5906,7 +5906,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_q2_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_q2_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5950,7 +5950,7 @@
       "category": "Image",
       "type": "Brand",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-led_billboard-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-led_billboard-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -5973,8 +5973,8 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_luma_photon_style_ref-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_luma_photon_style_ref-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_luma_photon_style_ref-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_luma_photon_style_ref-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6020,7 +6020,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/txt_to_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/txt_to_image_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6043,7 +6043,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_runway_gen3a_turbo_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_runway_gen3a_turbo_image_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6067,7 +6067,7 @@
       "category": "Image",
       "type": "3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_tripo_image_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_tripo_image_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6091,8 +6091,8 @@
       "category": "Image",
       "type": "Product",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-poster_product_integration-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-poster_product_integration-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-poster_product_integration-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/templates-poster_product_integration-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6115,7 +6115,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bytedance_text_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bytedance_text_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6139,7 +6139,7 @@
       "category": "Image",
       "type": "Image to 3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_tripo_multiview_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_tripo_multiview_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6163,8 +6163,8 @@
       "category": "Image",
       "type": "Image to 3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/3d_hunyuan3d_multiview_to_model_turbo-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/3d_hunyuan3d_multiview_to_model_turbo-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/3d_hunyuan3d_multiview_to_model_turbo-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/3d_hunyuan3d_multiview_to_model_turbo-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6187,7 +6187,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/template-multistyle-magazine-cover-nanobananapro-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/template-multistyle-magazine-cover-nanobananapro-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6211,7 +6211,7 @@
       "category": "Image",
       "type": "Image to 3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/3d_hunyuan3d_image_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/3d_hunyuan3d_image_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6234,7 +6234,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_recraft_vector_gen-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_recraft_vector_gen-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6259,7 +6259,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/flux_schnell_full_text_to_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/flux_schnell_full_text_to_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6282,8 +6282,8 @@
       "category": "Image",
       "type": "Image to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/sd3.5_large_blur-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/sd3.5_large_blur-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/sd3.5_large_blur-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/sd3.5_large_blur-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6306,7 +6306,7 @@
       "category": "Image",
       "type": "Brand Design",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-3x3_grid_brand_icons-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-3x3_grid_brand_icons-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6330,7 +6330,7 @@
       "category": "Image",
       "type": "Style Reference",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-product_ad-v2.0-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-product_ad-v2.0-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6352,7 +6352,7 @@
       "category": "Image",
       "type": "Inpainting",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/wan2.1_fun_inp-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/wan2.1_fun_inp-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6375,7 +6375,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_moonvalley_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_moonvalley_image_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6399,7 +6399,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_dall_e_2_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_openai_dall_e_2_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6423,7 +6423,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_dall_e_3_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_openai_dall_e_3_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6469,7 +6469,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_hailuo_minimax_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_hailuo_minimax_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6493,7 +6493,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_ideogram_v3_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_ideogram_v3_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6517,7 +6517,7 @@
       "category": "Image",
       "type": "3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_meshy_text_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_meshy_text_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6541,8 +6541,8 @@
       "category": "Image",
       "type": "Inpainting",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_dall_e_2_inpaint-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_dall_e_2_inpaint-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_openai_dall_e_2_inpaint-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_openai_dall_e_2_inpaint-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6566,7 +6566,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_image_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_image_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6590,7 +6590,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_pixverse_template_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_pixverse_template_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6614,7 +6614,7 @@
       "category": "Image",
       "type": "Image to 3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_rodin_multiview_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_rodin_multiview_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6638,7 +6638,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2.1_fun_camera_v1.1_14B-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2.1_fun_camera_v1.1_14B-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6660,7 +6660,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_hailuo_minimax_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_hailuo_minimax_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6684,7 +6684,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_openai_image_1_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_openai_image_1_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6708,7 +6708,7 @@
       "category": "Image",
       "type": "Image to 3D",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_rodin_image_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_rodin_image_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6753,7 +6753,7 @@
       "category": "Image",
       "type": "Image Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates-poster_to_2x2_mockups-v2.0-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates-poster_to_2x2_mockups-v2.0-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6776,7 +6776,7 @@
       "category": "Image",
       "type": "Audio",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-audioseparation-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility-audioseparation-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6796,7 +6796,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_moonvalley_text_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_moonvalley_text_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6820,7 +6820,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_pixverse_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_pixverse_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6844,7 +6844,7 @@
       "category": "Image",
       "type": "Text to Model",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_tripo_text_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_tripo_text_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6868,7 +6868,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_vidu_text_to_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_vidu_text_to_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6892,7 +6892,7 @@
       "category": "Image",
       "type": "Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2_klein_image_edit_9b_base-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_flux2_klein_image_edit_9b_base-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6915,8 +6915,8 @@
       "category": "Image",
       "type": "Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2_klein_image_edit_9b_distilled-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2_klein_image_edit_9b_distilled-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_flux2_klein_image_edit_9b_distilled-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/image_flux2_klein_image_edit_9b_distilled-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6939,8 +6939,8 @@
       "category": "Image",
       "type": "Preprocessor",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-normal_crafter-video-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-normal_crafter-video-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility-normal_crafter-video-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility-normal_crafter-video-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6960,7 +6960,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_hailuo_minimax_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_hailuo_minimax_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -6984,7 +6984,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_effects-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_effects-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7007,7 +7007,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_luma_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_luma_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7031,7 +7031,7 @@
       "category": "Image",
       "type": "Text to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_pixverse_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_pixverse_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7055,7 +7055,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_recraft_image_gen_with_color_control-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_recraft_image_gen_with_color_control-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7079,7 +7079,7 @@
       "category": "Image",
       "type": "Text to Model",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_tripo3_0_text_to_model-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_tripo3_0_text_to_model-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7103,7 +7103,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/image_flux2_text_to_image_9b-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/image_flux2_text_to_image_9b-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7126,8 +7126,8 @@
       "category": "Image",
       "type": "Canny",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-lineart-video-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/utility-lineart-video-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/utility-lineart-video-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/utility-lineart-video-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7147,7 +7147,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_wan2.1_fun_camera_v1.1_1.3B-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_wan2.1_fun_camera_v1.1_1.3B-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7169,8 +7169,8 @@
       "category": "Image",
       "type": "Outpainting",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux1_expand_image-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_bfl_flux1_expand_image-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux1_expand_image-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_bfl_flux1_expand_image-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7192,7 +7192,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_king_o3_t2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_king_o3_t2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7215,7 +7215,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_o3_i2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_o3_i2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7239,7 +7239,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_o3_flf2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_o3_flf2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7262,7 +7262,7 @@
       "category": "Image",
       "type": "Text to Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_o3_image-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_o3_image-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7286,8 +7286,8 @@
       "category": "Image",
       "type": "Video Edit",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_o3_video_edit-1.webp",
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_o3_video_edit-2.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_o3_video_edit-1.webp",
+        "https://www.comfy.org/workflows/thumbnails/api_kling_o3_video_edit-2.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7311,7 +7311,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_v3_flf2v-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_v3_flf2v-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7335,7 +7335,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_v3_video-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_v3_video-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7359,7 +7359,7 @@
       "category": "Image",
       "type": "Image",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/api_kling_v3_t2i-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/api_kling_v3_t2i-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7403,7 +7403,7 @@
       "category": "Image",
       "type": "API",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/template-recraft_create_style-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/template-recraft_create_style-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7426,7 +7426,7 @@
       "category": "Image",
       "type": "Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/templates_product_scene_transformation-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/templates_product_scene_transformation-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",
@@ -7451,7 +7451,7 @@
       "category": "Image",
       "type": "Image to Video",
       "thumbnails": [
-        "https://workflow-templates.vercel.app/templates/thumbnails/video_ltx2_i2v_lora-1.webp"
+        "https://www.comfy.org/workflows/thumbnails/video_ltx2_i2v_lora-1.webp"
       ],
       "isPopular": false,
       "createdBy": "ComfyUI",

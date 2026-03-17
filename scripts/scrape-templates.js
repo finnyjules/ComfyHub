@@ -10,7 +10,7 @@ import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const BASE_URL = 'https://workflow-templates.vercel.app'
+const BASE_URL = 'https://www.comfy.org/workflows'
 const OUTPUT_PATH = resolve(__dirname, '../src/data/scraped/templates.json')
 const CONCURRENCY = 5
 const DELAY_MS = 200
